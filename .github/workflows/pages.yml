@@ -1,0 +1,51 @@
+name: Verify and deploy MachAtlas
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions/checkout@v4
+        with:
+          repository: hengyuhang61-creator/swbli-physics-bench
+          ref: d1f488778142859aff05bca5d766a7da4f9afa7d
+          path: bench
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r bench/requirements.txt
+      - run: |
+          cd bench
+          python -m analysis fetch all
+          python -m analysis run all
+          python -m unittest discover -s tests -v
+      - run: python make_data.py bench/results/local/replay --out replayed.json
+      - run: python make_figures.py bench --out replayed-figures
+      - run: node --test checks.test.mjs
+        env:
+          ATLAS_REPLAY: replayed.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy verified site
+        id: deploy
+        uses: actions/deploy-pages@v4
