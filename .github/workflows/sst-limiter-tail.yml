@@ -1,0 +1,58 @@
+name: Mach 5 strain-limiter continuation
+on:
+  push:
+    branches: [research/sst-limiter-tail-20261124]
+permissions:
+  actions: read
+  contents: read
+jobs:
+  tail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 45486012820
+          name: mach5-strain-limiter-control
+          path: previous
+      - name: Rebuild only the strain-floor executable
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir evidence
+          uname -a | tee evidence/uname.txt
+          lscpu | tee evidence/cpu.txt
+          g++ --version | tee evidence/compiler.txt
+          git clone --depth 1 --branch v8.6.0 https://github.com/su2code/SU2.git su2
+          cd su2
+          test "$(git rev-parse HEAD)" = 7048fd35f56d4bf52e586429d6746a36a10255f8
+          git apply ../previous/strain-floor.patch
+          ./meson.py setup build --buildtype=release -Dwith-mpi=disabled -Dwith-omp=true -Denable-tecio=false -Denable-cgns=false
+          cp build/meson-logs/meson-log.txt ../evidence/configure.log
+          /usr/bin/time -v -o ../evidence/build.time ninja -C build -j3 2>&1 | tee ../evidence/build.log
+          cp build/SU2_CFD/src/SU2_CFD strain-floor
+          sha256sum strain-floor | tee ../evidence/rebuilt-binary-sha256.txt
+          cp ../previous/binary-sha256.txt ../evidence/previous-binary-sha256.txt
+      - name: Resume the verified 9,900-iteration checkpoint
+        shell: bash
+        run: |
+          set -euxo pipefail
+          sudo apt-get -qq update
+          sudo apt-get -qq install libglu1-mesa
+          python -m pip install -r research/requirements.txt
+          cp previous/strain-floor-chain.json evidence/
+          cp previous/strain-floor.patch evidence/
+          python research/continue_pair.py su2/strain-floor previous/sst-v2003m.cfg previous/strain-floor-9900 evidence strain-floor --at 9900 --threads 2 --blocks 4 --resume
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mach5-strain-limiter-tail
+          path: evidence/
+          retention-days: 30
