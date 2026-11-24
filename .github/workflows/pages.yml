@@ -33,6 +33,26 @@ jobs:
       - run: node --test checks.test.mjs
         env:
           ATLAS_REPLAY: replayed.json
+      - name: Check published native study data
+        run: node --test native-study.test.mjs
+      - name: Run a bounded native SU2 smoke case
+        shell: bash
+        working-directory: research
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get -qq install libglu1-mesa
+          python -m pip install -r requirements.txt
+          curl --fail --silent --show-error --location https://github.com/su2code/SU2/releases/download/v8.6.0/SU2_v8.6.0_linux64-omp.zip -o "$RUNNER_TEMP/su2.zip"
+          echo "b306dcb7e76caec54e376542916aae14a32abd6c2f6fa8b871ec10ffe80b41ac  $RUNNER_TEMP/su2.zip" | sha256sum -c -
+          unzip -q "$RUNNER_TEMP/su2.zip" -d "$RUNNER_TEMP/su2"
+          solver=$(find "$RUNNER_TEMP/su2" -type f -name SU2_CFD -print -quit)
+          test -n "$solver"
+          chmod +x "$solver"
+          python fetch_inputs.py upstream
+          python make_mesh.py upstream/VandV-geometry.geo coarse grids/coarse
+          python run_native.py "$solver" grids/coarse/mesh.su2 upstream/official-v8.6.0-sa.cfg runs/smoke --iters 20 --threads 2 --seconds 160
+          python audit_run.py runs/smoke --out runs/smoke/metrics.json
+          python -c 'import json; m=json.load(open("runs/smoke/metrics.json")); assert m["done_iterations"] == 20 and m["valid_primitives"]'
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

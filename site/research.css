@@ -1,0 +1,18 @@
+.research{max-width:1080px;padding-top:40px}
+.research h1{font-size:clamp(2.8rem,6.8vw,5.1rem);max-width:15ch}
+.research .lede{max-width:64ch}
+.research section{margin:27px 0 32px}
+.study-links{display:flex;flex-wrap:wrap;gap:10px 18px}
+.study-scroll{overflow:auto;background:white;border:1px solid var(--line);border-radius:4px}
+.study-scroll table{border-collapse:collapse;width:100%;min-width:680px;font-size:.87rem}
+.study-scroll th,.study-scroll td{padding:7px 9px;border-bottom:1px solid #dce6e4;text-align:right}
+.study-scroll th{background:#e5efea}.study-scroll th:first-child,.study-scroll td:first-child{text-align:left}
+.study-scroll td{font-variant-numeric:tabular-nums}
+.caption{font-size:.84rem;color:var(--muted);margin:8px 0 14px}
+.details{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:13px 0}
+.details select{max-width:100%}.details output{flex-basis:100%;font-size:.91rem}
+.research figure{background:white;border:1px solid var(--line);padding:8px;overflow:hidden}
+.research figure img{display:block;width:100%}
+.research figure figcaption{padding:5px 5px 0}
+#study-findings p,#ramp-result p{max-width:78ch}
+@media(max-width:480px){.research{padding-top:25px}.research .study-links{font-size:.93rem}.bar .brand{font-size:1.19rem}.bar nav a{font-size:.81rem}}

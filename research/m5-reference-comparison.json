@@ -1,0 +1,312 @@
+{
+  "comparison_window_m": [
+    0.32,
+    0.4
+  ],
+  "references": {
+    "DLR experiment as hosted with MOSE": {
+      "file": "MOSE-SA-reference-schulein.dat",
+      "zero_brackets": [
+        {
+          "x_m": 0.33373941267948815,
+          "kind": "separation",
+          "reconstruction_bracket_m": [
+            0.3306288124845335,
+            0.3338117112100965
+          ]
+        },
+        {
+          "x_m": 0.34583395736291206,
+          "kind": "reattachment",
+          "reconstruction_bracket_m": [
+            0.34305238492947293,
+            0.3458895570403366
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "case_id": "m5-coarse-sa",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0005781069891920394,
+          "overlap_rmse_cf": 0.00077956363805306
+        },
+        {
+          "case_id": "m5-medium-sa",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0005958861217664001,
+          "overlap_rmse_cf": 0.0007584464925201235
+        },
+        {
+          "case_id": "m5-fine-sa",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.000589953758733035,
+          "overlap_rmse_cf": 0.0007637224416854776
+        },
+        {
+          "case_id": "m5-coarse-sst",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0010305965130835487,
+          "overlap_rmse_cf": 0.0012323881695340824
+        },
+        {
+          "case_id": "m5-medium-sst",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0010329542095961401,
+          "overlap_rmse_cf": 0.0012279042119018064
+        },
+        {
+          "case_id": "m5-fine-sst",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0010281279355543638,
+          "overlap_rmse_cf": 0.0012111663460273683
+        },
+        {
+          "case_id": "m5-control-adi",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0005774241214734164,
+          "overlap_rmse_cf": 0.0007758155355670227
+        },
+        {
+          "case_id": "m5-control-iso",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0006862947194457724,
+          "overlap_rmse_cf": 0.0009136487935219106
+        },
+        {
+          "case_id": "m5-wilcox-drift",
+          "matched": 22,
+          "reference": 22,
+          "overlap_mae_cf": 0.0015196000815319195,
+          "overlap_rmse_cf": 0.001733975657247245
+        }
+      ]
+    },
+    "Archived SU2 SA": {
+      "file": "MOSE-SA-reference-SU2-SA.dat",
+      "zero_brackets": [
+        {
+          "x_m": 0.3375007402521204,
+          "kind": "separation",
+          "reconstruction_bracket_m": [
+            0.3374181117452811,
+            0.3375703294081851
+          ]
+        },
+        {
+          "x_m": 0.3430065880395709,
+          "kind": "reattachment",
+          "reconstruction_bracket_m": [
+            0.34287716157207193,
+            0.34333877597216816
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "case_id": "m5-coarse-sa",
+          "matched": 110,
+          "reference": 110,
+          "overlap_mae_cf": 0.00016573016263877663,
+          "overlap_rmse_cf": 0.00024618706302348555
+        },
+        {
+          "case_id": "m5-medium-sa",
+          "matched": 110,
+          "reference": 110,
+          "overlap_mae_cf": 7.016788653043914e-05,
+          "overlap_rmse_cf": 0.00012355161062034244
+        },
+        {
+          "case_id": "m5-fine-sa",
+          "matched": 110,
+          "reference": 110,
+          "overlap_mae_cf": 0.00013342647736168446,
+          "overlap_rmse_cf": 0.00020790512721114254
+        },
+        {
+          "case_id": "m5-control-adi",
+          "matched": 110,
+          "reference": 110,
+          "overlap_mae_cf": 0.0001543410746503965,
+          "overlap_rmse_cf": 0.00022561177501236333
+        },
+        {
+          "case_id": "m5-control-iso",
+          "matched": 110,
+          "reference": 110,
+          "overlap_mae_cf": 0.00042157582488261446,
+          "overlap_rmse_cf": 0.0005963521783356512
+        }
+      ]
+    },
+    "Archived SU2 SST": {
+      "file": "MOSE-SST-reference-SU2-SST.dat",
+      "zero_brackets": [
+        {
+          "x_m": 0.33441030977284536,
+          "kind": "separation",
+          "reconstruction_bracket_m": [
+            0.33432458478377,
+            0.3344916596949371
+          ]
+        },
+        {
+          "x_m": 0.3426802213837713,
+          "kind": "reattachment",
+          "reconstruction_bracket_m": [
+            0.342408905300339,
+            0.34268753647927314
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "case_id": "m5-coarse-sst",
+          "matched": 111,
+          "reference": 111,
+          "overlap_mae_cf": 0.0013418354503090394,
+          "overlap_rmse_cf": 0.001551865003035132
+        },
+        {
+          "case_id": "m5-medium-sst",
+          "matched": 111,
+          "reference": 111,
+          "overlap_mae_cf": 0.0013256850683790605,
+          "overlap_rmse_cf": 0.0015382448948432065
+        },
+        {
+          "case_id": "m5-fine-sst",
+          "matched": 111,
+          "reference": 111,
+          "overlap_mae_cf": 0.0012574750584349284,
+          "overlap_rmse_cf": 0.0014684865894024196
+        },
+        {
+          "case_id": "m5-wilcox-drift",
+          "matched": 111,
+          "reference": 111,
+          "overlap_mae_cf": 0.0018483581019275977,
+          "overlap_rmse_cf": 0.002164224350522115
+        }
+      ]
+    },
+    "Archived Wind-US SA": {
+      "file": "MOSE-SA-reference-wind-SA.dat",
+      "zero_brackets": [
+        {
+          "x_m": 0.3367125304143775,
+          "kind": "separation",
+          "reconstruction_bracket_m": [
+            0.33653124526586875,
+            0.3368781206619899
+          ]
+        },
+        {
+          "x_m": 0.3437949094999082,
+          "kind": "reattachment",
+          "reconstruction_bracket_m": [
+            0.34289540004761176,
+            0.3438742004149031
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "case_id": "m5-coarse-sa",
+          "matched": 38,
+          "reference": 38,
+          "overlap_mae_cf": 0.0007126042309864539,
+          "overlap_rmse_cf": 0.0008180170081165429
+        },
+        {
+          "case_id": "m5-medium-sa",
+          "matched": 37,
+          "reference": 38,
+          "overlap_mae_cf": 0.0006417201583247024,
+          "overlap_rmse_cf": 0.0007212816536253646
+        },
+        {
+          "case_id": "m5-fine-sa",
+          "matched": 37,
+          "reference": 38,
+          "overlap_mae_cf": 0.0007038094780733794,
+          "overlap_rmse_cf": 0.0007852682846027778
+        },
+        {
+          "case_id": "m5-control-adi",
+          "matched": 38,
+          "reference": 38,
+          "overlap_mae_cf": 0.0007000403868513115,
+          "overlap_rmse_cf": 0.0008026568661657352
+        },
+        {
+          "case_id": "m5-control-iso",
+          "matched": 38,
+          "reference": 38,
+          "overlap_mae_cf": 0.0009145787494250592,
+          "overlap_rmse_cf": 0.0010416431158900414
+        }
+      ]
+    },
+    "Archived Wind-US SST": {
+      "file": "MOSE-SST-reference-wind-SST.dat",
+      "zero_brackets": [
+        {
+          "x_m": 0.32769841521346776,
+          "kind": "separation",
+          "reconstruction_bracket_m": [
+            0.32752940571774836,
+            0.32786977313270405
+          ]
+        },
+        {
+          "x_m": 0.344790908202079,
+          "kind": "reattachment",
+          "reconstruction_bracket_m": [
+            0.34443562225678026,
+            0.34531571824306145
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "case_id": "m5-coarse-sst",
+          "matched": 34,
+          "reference": 34,
+          "overlap_mae_cf": 0.00047768480442290755,
+          "overlap_rmse_cf": 0.0005795618425645125
+        },
+        {
+          "case_id": "m5-medium-sst",
+          "matched": 34,
+          "reference": 34,
+          "overlap_mae_cf": 0.00046932408996764783,
+          "overlap_rmse_cf": 0.0005771552607937818
+        },
+        {
+          "case_id": "m5-fine-sst",
+          "matched": 34,
+          "reference": 34,
+          "overlap_mae_cf": 0.0004026221113628102,
+          "overlap_rmse_cf": 0.0005043336378762821
+        },
+        {
+          "case_id": "m5-wilcox-drift",
+          "matched": 34,
+          "reference": 34,
+          "overlap_mae_cf": 0.0010413023972385342,
+          "overlap_rmse_cf": 0.0011833813108516073
+        }
+      ]
+    }
+  }
+}

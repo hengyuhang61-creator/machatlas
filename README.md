@@ -2,11 +2,13 @@
 
 **See the physics behind supersonic flight.**
 
+**New in v0.2.0.** [Native SU2 research](https://hengyuhang61-creator.github.io/machatlas/research.html), with new computed fields, three Mach 5 grid levels, the wall-temperature comparison and the Mach 2.05 transfer checks. [Methods and native replay](research/README.md).
+
 An interactive atlas of three wind-tunnel shock–boundary-layer interaction cases. Explore measured velocity maps and change the comparison metric or radial sampling band.
 
 [Open the atlas](https://hengyuhang61-creator.github.io/machatlas/) · [Release](https://github.com/hengyuhang61-creator/machatlas/releases/latest) · [Report an issue](https://github.com/hengyuhang61-creator/machatlas/issues/new) · [中文](README.zh-CN.md)
 
-![MachAtlas with the measured Stanford Mach 2.05 flow map](media/cover.png)
+![MachAtlas with a new SU2 Mach 5 field](media/native-study-cover.png)
 
 | Case | What you can inspect |
 | --- | --- |
@@ -37,4 +39,4 @@ Open http://localhost:8000. For a single-case replay, pass `m205`, `m25`, or `hm
 
 The flow maps show experimental PIV. Mach 2.05 and Mach 2.5 comparisons use archived CFD columns. The Mach 3 comparison uses two experiments. The release does not execute a CFD solver or establish grid convergence, universal model rankings or independent validation.
 
-[Watch the radial-window demo](media/demo.gif) · [Sources and rights](SOURCES.md) · [Launch copy](PROMOTION.md) · [MIT license](LICENSE)
+[Watch actual native-state inspection](media/native-study-demo.gif) · [Native launch material](PROMOTION_NATIVE.md) · [Original radial-window demo](media/demo.gif) · [Sources and rights](SOURCES.md) · [Launch copy](PROMOTION.md) · [MIT license](LICENSE)

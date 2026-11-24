@@ -1,0 +1,3517 @@
+{
+  "status": "SCIENTIFIC_VALIDATION_HOLD",
+  "cases": [
+    {
+      "id": "m5-coarse-sa",
+      "label": "Coarse \u00b7 SA-neg",
+      "x_sep_reatt_mm": [
+        338.1331826660626,
+        342.9303865671324
+      ],
+      "bubbleMm": 4.797203901069793,
+      "cells": 37275,
+      "totalIterations": 1350,
+      "massPercent": 0.0007488089992576518,
+      "edge_drift_mm": 0.025220685530200626,
+      "checks": "Numerical checks met",
+      "yPlusP95": 1.0497389912605286,
+      "shockX20": 288.5,
+      "image": "figures/native/m5-coarse-sa.png"
+    },
+    {
+      "id": "m5-medium-sa",
+      "label": "Medium \u00b7 SA-neg",
+      "x_sep_reatt_mm": [
+        337.82538846369243,
+        342.9221598415346
+      ],
+      "bubbleMm": 5.096771377842174,
+      "cells": 75639,
+      "totalIterations": 1350,
+      "massPercent": 0.0074933973353031235,
+      "edge_drift_mm": 0.06077994088445848,
+      "checks": "Numerical checks met",
+      "yPlusP95": 0.7597120642662049,
+      "shockX20": 288.8,
+      "image": "figures/native/m5-medium-sa.png"
+    },
+    {
+      "id": "m5-fine-sa",
+      "label": "Fine \u00b7 SA-neg",
+      "x_sep_reatt_mm": [
+        338.0214213425304,
+        342.6075184633986
+      ],
+      "bubbleMm": 4.586097120868203,
+      "cells": 145765,
+      "totalIterations": 1350,
+      "massPercent": 0.0788860545212872,
+      "edge_drift_mm": 0.03316313283545469,
+      "checks": "Numerical checks met",
+      "yPlusP95": 0.49189734011888503,
+      "shockX20": 288.5,
+      "image": "figures/native/m5-fine-sa.png"
+    },
+    {
+      "id": "m5-coarse-sst",
+      "label": "Coarse \u00b7 SST-2003m",
+      "x_sep_reatt_mm": [
+        321.9711531981168,
+        345.52830589479413
+      ],
+      "bubbleMm": 23.55715269667735,
+      "cells": 37275,
+      "totalIterations": 4600,
+      "massPercent": 0.002470427494260656,
+      "edge_drift_mm": 0.1378671734554473,
+      "checks": "Numerical checks met",
+      "yPlusP95": 0.9415351569652557,
+      "shockX20": 290.9,
+      "image": "figures/native/m5-coarse-sst.png"
+    },
+    {
+      "id": "m5-medium-sst",
+      "label": "Medium \u00b7 SST-2003m",
+      "x_sep_reatt_mm": [
+        322.04782763004647,
+        345.185594303965
+      ],
+      "bubbleMm": 23.13776667391852,
+      "cells": 75639,
+      "totalIterations": 6000,
+      "massPercent": 0.0022173526479323017,
+      "edge_drift_mm": 0.22488397051523634,
+      "checks": "Numerical checks met",
+      "yPlusP95": 0.6834037959575653,
+      "shockX20": 288.8,
+      "image": "figures/native/m5-medium-sst.png"
+    },
+    {
+      "id": "m5-fine-sst",
+      "label": "Fine \u00b7 SST-2003m",
+      "x_sep_reatt_mm": [
+        323.45519924297736,
+        344.62091577912025
+      ],
+      "bubbleMm": 21.165716536142895,
+      "cells": 145765,
+      "totalIterations": 6000,
+      "massPercent": 0.013773748211864096,
+      "edge_drift_mm": 0.7688445622265476,
+      "checks": "Numerical checks met",
+      "yPlusP95": 0.4597151666879654,
+      "shockX20": 289.3,
+      "image": "figures/native/m5-fine-sst.png"
+    },
+    {
+      "id": "m5-control-adi",
+      "label": "Coarse \u00b7 matched adiabatic SA",
+      "x_sep_reatt_mm": [
+        338.06510629773913,
+        342.95351628599116
+      ],
+      "bubbleMm": 4.888409988252022,
+      "cells": 37275,
+      "totalIterations": 2400,
+      "massPercent": 0.0017371341257311202,
+      "edge_drift_mm": 0.0009544189869075126,
+      "checks": "Numerical checks met",
+      "yPlusP95": 1.048364704847336,
+      "shockX20": 288.5,
+      "image": "figures/native/m5-control-adi.png"
+    },
+    {
+      "id": "m5-control-iso",
+      "label": "Coarse \u00b7 matched 300 K SA",
+      "x_sep_reatt_mm": [
+        339.97643780431275,
+        342.9133750883932
+      ],
+      "bubbleMm": 2.936937284080443,
+      "cells": 37275,
+      "totalIterations": 2400,
+      "massPercent": 0.0015648179842626107,
+      "edge_drift_mm": 0.0008582702032526868,
+      "checks": "Numerical checks met",
+      "yPlusP95": 1.4238784670829774,
+      "shockX20": 290.9,
+      "image": "figures/native/m5-control-iso.png"
+    },
+    {
+      "id": "m5-wilcox-drift",
+      "label": "Coarse \u00b7 SST + Wilcox",
+      "x_sep_reatt_mm": [
+        315.5171300155436,
+        349.5536341812316
+      ],
+      "bubbleMm": 34.03650416568797,
+      "cells": 37275,
+      "totalIterations": 3200,
+      "massPercent": 0.003452279211920052,
+      "edge_drift_mm": 7.199806637746349,
+      "checks": "Stationarity hold",
+      "yPlusP95": 0.9229710638523102,
+      "shockX20": 290.9,
+      "image": "figures/native/m5-wilcox-drift.png"
+    }
+  ],
+  "findings": [
+    "All three SA-neg grids give a 4.59\u20135.10 mm separated interval. The corresponding SST-2003m interval is 21.17\u201323.56 mm. The tested closure effect is larger than the spread across this grid family. The sequence does not establish an asymptotic grid-convergence order.",
+    "With the same starting field and 1,050 additional iterations, the coarse SA interval is 4.89 mm with an adiabatic wall and 2.94 mm with a 300 K wall (39.9% shorter). This controlled thermal change does not reconcile the entire reference spread.",
+    "The Wilcox SST branch had 0.00345% terminal mass error, yet a 7.20 mm shift in its wall separation marker. It remains on hold for steady convergence."
+  ],
+  "ramp": [
+    {
+      "id": "m205-3mm-l0-sa",
+      "label": "3 mm \u00b7 L1 \u00b7 SA",
+      "run": "m205-3mm-extended-sa-2100",
+      "earlier_run": "m205-3mm-extended-sa-1600",
+      "cells": 52224,
+      "totalIterations": 2100,
+      "mass": 0.011558934491356808,
+      "energyAdvective": 0.00977046067402608,
+      "cD_drift100": 3.618458722347578e-06,
+      "wallCrossings": [
+        {
+          "x_m": 0.03203385916709605,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.040390445563418254,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.002120033813966804,
+      "bottomCp": [
+        0.055884679290744615,
+        0.35120173596803306
+      ],
+      "ceilingYplus95": 0.8412473797798157,
+      "upstream_max_mae_pct": 2.2868438283700767,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 4.463901808300211,
+          "overlap_rmse": 5.539526135692617,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -30.0,
+          "mae_over_Uinf": 0.00842245624207587,
+          "max_abs_error_m_s": 16.776712866034586
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 5.9408489777010915,
+          "overlap_rmse": 6.474993137740505,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -20.0,
+          "x_evaluated_mm": -20.0,
+          "mae_over_Uinf": 0.011209149014530361,
+          "max_abs_error_m_s": 12.085948413002598
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 12.120272290361408,
+          "overlap_rmse": 20.39048463768359,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -10.0,
+          "mae_over_Uinf": 0.02286843828370077,
+          "max_abs_error_m_s": 83.9593309821413
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 11.643393768379394,
+          "overlap_rmse": 15.809326945636714,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.0,
+          "mae_over_Uinf": 0.02196866748750829,
+          "max_abs_error_m_s": 41.13662723813208
+        },
+        {
+          "reference_samples": 57,
+          "computed_samples": 57,
+          "supported_reference_samples": 57,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            12.75,
+            41.75
+          ],
+          "computed_domain": [
+            12.75,
+            41.75
+          ],
+          "domain_intersection": [
+            12.75,
+            41.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.7052879131657,
+          "overlap_rmse": 12.812015051502996,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 10.0,
+          "mae_over_Uinf": 0.018311863987105093,
+          "max_abs_error_m_s": 38.2800130017564
+        },
+        {
+          "reference_samples": 59,
+          "computed_samples": 59,
+          "supported_reference_samples": 59,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            29.25
+          ],
+          "computed_domain": [
+            0.25,
+            29.25
+          ],
+          "domain_intersection": [
+            0.25,
+            29.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 14.699088651638233,
+          "overlap_rmse": 30.006595689843454,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 20.0,
+          "x_evaluated_mm": 20.0,
+          "mae_over_Uinf": 0.02773412953139289,
+          "max_abs_error_m_s": 183.04674064294912
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 111.3299828392902,
+          "overlap_rmse": 144.68179609508667,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 30.0,
+          "mae_over_Uinf": 0.21005657139488715,
+          "max_abs_error_m_s": 335.5043063254162
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 24.93797982050854,
+          "overlap_rmse": 28.992985989262394,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 40.0,
+          "x_evaluated_mm": 40.0,
+          "mae_over_Uinf": 0.04705279211416706,
+          "max_abs_error_m_s": 51.87942253637158
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 10.651313651684761,
+          "overlap_rmse": 14.51884702230686,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.0,
+          "mae_over_Uinf": 0.020096818210725963,
+          "max_abs_error_m_s": 30.662538625596767
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 13.820620231205138,
+          "overlap_rmse": 14.934774108598788,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 60.0,
+          "x_evaluated_mm": 60.0,
+          "mae_over_Uinf": 0.02607664194567007,
+          "max_abs_error_m_s": 27.65471299093076
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-3mm-l0-sst",
+      "label": "3 mm \u00b7 L1 \u00b7 SST",
+      "run": "m205-3mm-l0-sst-2100",
+      "earlier_run": "m205-3mm-l0-sst-1800",
+      "cells": 52224,
+      "totalIterations": 2100,
+      "mass": 0.01164729807206963,
+      "energyAdvective": 0.058321881713165546,
+      "cD_drift100": 8.010475241760087e-06,
+      "wallCrossings": [
+        {
+          "x_m": 0.029120940385766743,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.042856656292819775,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.007725711029322319,
+      "bottomCp": [
+        0.17492396471317734,
+        0.328811524652617
+      ],
+      "ceilingYplus95": 0.808783769607544,
+      "upstream_max_mae_pct": 1.4218263522863264,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.1191284244544706,
+          "overlap_rmse": 3.6669329812621587,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -30.0,
+          "mae_over_Uinf": 0.005885147970668812,
+          "max_abs_error_m_s": 9.192153415821167
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 5.041736681888699,
+          "overlap_rmse": 5.356957638309403,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -20.0,
+          "x_evaluated_mm": -20.0,
+          "mae_over_Uinf": 0.009512710720544715,
+          "max_abs_error_m_s": 8.152665591690493
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 7.535679667117529,
+          "overlap_rmse": 11.800205458630161,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -10.0,
+          "mae_over_Uinf": 0.014218263522863263,
+          "max_abs_error_m_s": 51.912545937016944
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 19.413591433152295,
+          "overlap_rmse": 25.570351731567346,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.0,
+          "mae_over_Uinf": 0.03662941779840056,
+          "max_abs_error_m_s": 60.052544124416556
+        },
+        {
+          "reference_samples": 57,
+          "computed_samples": 57,
+          "supported_reference_samples": 57,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            12.75,
+            41.75
+          ],
+          "computed_domain": [
+            12.75,
+            41.75
+          ],
+          "domain_intersection": [
+            12.75,
+            41.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 11.031875426445387,
+          "overlap_rmse": 15.152605034195009,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 10.0,
+          "mae_over_Uinf": 0.020814859295179976,
+          "max_abs_error_m_s": 47.25853965346903
+        },
+        {
+          "reference_samples": 59,
+          "computed_samples": 59,
+          "supported_reference_samples": 59,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            29.25
+          ],
+          "computed_domain": [
+            0.25,
+            29.25
+          ],
+          "domain_intersection": [
+            0.25,
+            29.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 16.364816850142958,
+          "overlap_rmse": 32.521421714843754,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 20.0,
+          "x_evaluated_mm": 20.0,
+          "mae_over_Uinf": 0.030877012924798036,
+          "max_abs_error_m_s": 190.49884549813564
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 106.51701261858376,
+          "overlap_rmse": 127.23473275704717,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 30.0,
+          "mae_over_Uinf": 0.20097549550676183,
+          "max_abs_error_m_s": 276.1730755300176
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 28.145695799561672,
+          "overlap_rmse": 35.883857582426515,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 40.0,
+          "x_evaluated_mm": 40.0,
+          "mae_over_Uinf": 0.053105086414267304,
+          "max_abs_error_m_s": 101.06038955615399
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 14.317053416753417,
+          "overlap_rmse": 20.28498156132775,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.0,
+          "mae_over_Uinf": 0.027013308333497014,
+          "max_abs_error_m_s": 68.06808040290127
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 10.188514344446052,
+          "overlap_rmse": 14.76693085923456,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 60.0,
+          "x_evaluated_mm": 60.0,
+          "mae_over_Uinf": 0.019223611970652928,
+          "max_abs_error_m_s": 52.80034730047595
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-3mm-l1-sa",
+      "label": "3 mm \u00b7 L2 \u00b7 SA",
+      "run": "m205-3mm-l1-sa-2100",
+      "earlier_run": "m205-3mm-l1-sa-1800",
+      "cells": 103500,
+      "totalIterations": 2100,
+      "mass": 0.01553396272787571,
+      "energyAdvective": 0.01005912362483383,
+      "cD_drift100": 3.5231486829716644e-05,
+      "wallCrossings": [
+        {
+          "x_m": 0.031768363644996904,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.04052617397321496,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.009097892607688729,
+      "bottomCp": [
+        0.06216335032172793,
+        0.3470014106294796
+      ],
+      "ceilingYplus95": 0.5729917287826538,
+      "upstream_max_mae_pct": 2.2903043286512723,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 4.49694576430499,
+          "overlap_rmse": 5.472920774422344,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -30.0,
+          "mae_over_Uinf": 0.00848480332887734,
+          "max_abs_error_m_s": 15.6887552151195
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 5.903619883895903,
+          "overlap_rmse": 6.426111120386479,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -20.0,
+          "x_evaluated_mm": -20.0,
+          "mae_over_Uinf": 0.011138905441313025,
+          "max_abs_error_m_s": 11.41692015151807
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 12.138612941851743,
+          "overlap_rmse": 20.54115232756305,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -10.0,
+          "mae_over_Uinf": 0.022903043286512725,
+          "max_abs_error_m_s": 84.60208124306257
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 12.820345863207814,
+          "overlap_rmse": 17.463127291270034,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.0,
+          "mae_over_Uinf": 0.024189331817373233,
+          "max_abs_error_m_s": 41.008157769868504
+        },
+        {
+          "reference_samples": 57,
+          "computed_samples": 57,
+          "supported_reference_samples": 57,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            12.75,
+            41.75
+          ],
+          "computed_domain": [
+            12.75,
+            41.75
+          ],
+          "domain_intersection": [
+            12.75,
+            41.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 10.313375633982934,
+          "overlap_rmse": 13.681315902840344,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 10.0,
+          "mae_over_Uinf": 0.019459199309401765,
+          "max_abs_error_m_s": 41.296753333029415
+        },
+        {
+          "reference_samples": 59,
+          "computed_samples": 59,
+          "supported_reference_samples": 59,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            29.25
+          ],
+          "computed_domain": [
+            0.25,
+            29.25
+          ],
+          "domain_intersection": [
+            0.25,
+            29.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 13.534617791225365,
+          "overlap_rmse": 29.472524382790134,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 20.0,
+          "x_evaluated_mm": 20.0,
+          "mae_over_Uinf": 0.025537014700425218,
+          "max_abs_error_m_s": 183.4704731624175
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 110.36310597854029,
+          "overlap_rmse": 144.25832822684072,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 30.0,
+          "mae_over_Uinf": 0.2082322754312081,
+          "max_abs_error_m_s": 333.6568238386685
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 26.8870313840644,
+          "overlap_rmse": 31.120578528202117,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 40.0,
+          "x_evaluated_mm": 40.0,
+          "mae_over_Uinf": 0.05073024789446113,
+          "max_abs_error_m_s": 52.505187575336436
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.186629636158287,
+          "overlap_rmse": 13.049896820948781,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.0,
+          "mae_over_Uinf": 0.0173332634644496,
+          "max_abs_error_m_s": 31.834747048536713
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 13.400159214060398,
+          "overlap_rmse": 14.658424701072006,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 60.0,
+          "x_evaluated_mm": 60.0,
+          "mae_over_Uinf": 0.02528331927181207,
+          "max_abs_error_m_s": 25.445861074343497
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-3mm-l1-sst",
+      "label": "3 mm \u00b7 L2 \u00b7 SST",
+      "run": "m205-3mm-l1-sst-2100",
+      "earlier_run": "m205-3mm-l1-sst-1800",
+      "cells": 103500,
+      "totalIterations": 2100,
+      "mass": 0.017164267517238183,
+      "energyAdvective": 0.061538140531214675,
+      "cD_drift100": 6.690440548427041e-05,
+      "wallCrossings": [
+        {
+          "x_m": 0.028363667014057063,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.04266746364821664,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.08411908761628631,
+      "bottomCp": [
+        0.20073098699931263,
+        0.32543988954563546
+      ],
+      "ceilingYplus95": 0.5563311576843262,
+      "upstream_max_mae_pct": 1.2284630021785745,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.0572297168983464,
+          "overlap_rmse": 3.6844728598472822,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -30.0,
+          "mae_over_Uinf": 0.005768357956411975,
+          "max_abs_error_m_s": 9.82163295000123
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 4.7156067902819165,
+          "overlap_rmse": 5.274417439126831,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -20.0,
+          "x_evaluated_mm": -20.0,
+          "mae_over_Uinf": 0.008897371302418711,
+          "max_abs_error_m_s": 8.331787050332878
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 6.5108539115464446,
+          "overlap_rmse": 9.046571379211551,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -10.0,
+          "mae_over_Uinf": 0.012284630021785745,
+          "max_abs_error_m_s": 36.13986247590026
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 18.400905021519545,
+          "overlap_rmse": 24.88137145463779,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.0,
+          "mae_over_Uinf": 0.0347186887198482,
+          "max_abs_error_m_s": 58.45488868578951
+        },
+        {
+          "reference_samples": 57,
+          "computed_samples": 57,
+          "supported_reference_samples": 57,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            12.75,
+            41.75
+          ],
+          "computed_domain": [
+            12.75,
+            41.75
+          ],
+          "domain_intersection": [
+            12.75,
+            41.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 10.133277871041416,
+          "overlap_rmse": 14.315431639271416,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 10.0,
+          "mae_over_Uinf": 0.019119392209512108,
+          "max_abs_error_m_s": 45.965848410607464
+        },
+        {
+          "reference_samples": 59,
+          "computed_samples": 59,
+          "supported_reference_samples": 59,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            29.25
+          ],
+          "computed_domain": [
+            0.25,
+            29.25
+          ],
+          "domain_intersection": [
+            0.25,
+            29.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 14.815181346406158,
+          "overlap_rmse": 31.518618140093675,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 20.0,
+          "x_evaluated_mm": 20.0,
+          "mae_over_Uinf": 0.027953172351709733,
+          "max_abs_error_m_s": 189.07769903741055
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 99.87998686524497,
+          "overlap_rmse": 117.86973220487188,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 30.0,
+          "mae_over_Uinf": 0.18845280540612258,
+          "max_abs_error_m_s": 254.3895886040793
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 30.679525229071857,
+          "overlap_rmse": 38.360860870220804,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 40.0,
+          "x_evaluated_mm": 40.0,
+          "mae_over_Uinf": 0.057885896658626146,
+          "max_abs_error_m_s": 105.32234278212614
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 14.221561104417939,
+          "overlap_rmse": 19.139697563750623,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.0,
+          "mae_over_Uinf": 0.02683313415927913,
+          "max_abs_error_m_s": 61.78169830328045
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.127549772068148,
+          "overlap_rmse": 13.622108105747252,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 60.0,
+          "x_evaluated_mm": 60.0,
+          "mae_over_Uinf": 0.01722179202277009,
+          "max_abs_error_m_s": 49.214408390993015
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-3mm-l2-sa",
+      "label": "3 mm \u00b7 L3 \u00b7 SA",
+      "run": "m205-3mm-l2-sa-2100",
+      "earlier_run": "m205-3mm-l2-sa-1800",
+      "cells": 208896,
+      "totalIterations": 2100,
+      "mass": 0.058047902274860744,
+      "energyAdvective": 0.01621246617548726,
+      "cD_drift100": 0.0004189257320380049,
+      "wallCrossings": [
+        {
+          "x_m": 0.03176823065502645,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.04044072600829645,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.17766636510652134,
+      "bottomCp": [
+        0.05617238699754863,
+        0.35126487880938684
+      ],
+      "ceilingYplus95": 0.38738641142845154,
+      "upstream_max_mae_pct": 2.285253455967038,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 4.441755282994062,
+          "overlap_rmse": 5.321204098531276,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -30.0,
+          "mae_over_Uinf": 0.008380670345271814,
+          "max_abs_error_m_s": 14.61012234715622
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 5.883477051948319,
+          "overlap_rmse": 6.376864698587849,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -20.0,
+          "x_evaluated_mm": -20.0,
+          "mae_over_Uinf": 0.011100900098015695,
+          "max_abs_error_m_s": 10.294418933636962
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 12.1118433166253,
+          "overlap_rmse": 20.69028206383124,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -10.0,
+          "mae_over_Uinf": 0.022852534559670377,
+          "max_abs_error_m_s": 85.09003501836753
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 14.2712700880862,
+          "overlap_rmse": 19.401413366044043,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.0,
+          "mae_over_Uinf": 0.026926924694502263,
+          "max_abs_error_m_s": 40.343340787527396
+        },
+        {
+          "reference_samples": 57,
+          "computed_samples": 57,
+          "supported_reference_samples": 57,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            12.75,
+            41.75
+          ],
+          "computed_domain": [
+            12.75,
+            41.75
+          ],
+          "domain_intersection": [
+            12.75,
+            41.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 11.115906151616086,
+          "overlap_rmse": 14.918230067389675,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 10.0,
+          "mae_over_Uinf": 0.0209734078332379,
+          "max_abs_error_m_s": 44.83964992308972
+        },
+        {
+          "reference_samples": 59,
+          "computed_samples": 59,
+          "supported_reference_samples": 59,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            29.25
+          ],
+          "computed_domain": [
+            0.25,
+            29.25
+          ],
+          "domain_intersection": [
+            0.25,
+            29.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 12.747289902553943,
+          "overlap_rmse": 29.18377422694255,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 20.0,
+          "x_evaluated_mm": 20.0,
+          "mae_over_Uinf": 0.02405149038217725,
+          "max_abs_error_m_s": 184.4555405337383
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 110.49222290917868,
+          "overlap_rmse": 145.3546930841659,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 30.0,
+          "mae_over_Uinf": 0.2084758922814692,
+          "max_abs_error_m_s": 336.2661861416748
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 27.7937679715131,
+          "overlap_rmse": 32.143135130178926,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 40.0,
+          "x_evaluated_mm": 40.0,
+          "mae_over_Uinf": 0.05244107164436434,
+          "max_abs_error_m_s": 51.1042721116749
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 8.988356578511349,
+          "overlap_rmse": 12.071133313784385,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.0,
+          "mae_over_Uinf": 0.01695916335568179,
+          "max_abs_error_m_s": 29.84874622389583
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 13.358438531801887,
+          "overlap_rmse": 14.756955097868671,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 60.0,
+          "x_evaluated_mm": 60.0,
+          "mae_over_Uinf": 0.025204601003399787,
+          "max_abs_error_m_s": 23.534513976841765
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-3mm-l2-sst",
+      "label": "3 mm \u00b7 L3 \u00b7 SST",
+      "run": "m205-3mm-l2-sst-2100",
+      "earlier_run": "m205-3mm-l2-sst-1800",
+      "cells": 208896,
+      "totalIterations": 2100,
+      "mass": 0.06115979772746481,
+      "energyAdvective": 0.06884590567288544,
+      "cD_drift100": 0.0003736662998044626,
+      "wallCrossings": [
+        {
+          "x_m": 0.028426166065231226,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.04235876203447367,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.41155606176835474,
+      "bottomCp": [
+        0.20529323679882022,
+        0.3272173785563659
+      ],
+      "ceilingYplus95": 0.37892037630081177,
+      "upstream_max_mae_pct": 1.124356747350227,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.177712506231944,
+          "overlap_rmse": 3.799287287229805,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -30.0,
+          "mae_over_Uinf": 0.005995683974022536,
+          "max_abs_error_m_s": 9.908986872580726
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 4.839913917448047,
+          "overlap_rmse": 5.416823748151563,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -20.0,
+          "x_evaluated_mm": -20.0,
+          "mae_over_Uinf": 0.009131913051788768,
+          "max_abs_error_m_s": 8.572097242808013
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 5.959090760956203,
+          "overlap_rmse": 7.197999524557313,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -10.0,
+          "mae_over_Uinf": 0.01124356747350227,
+          "max_abs_error_m_s": 23.28601993739892
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.75,
+            44.75
+          ],
+          "computed_domain": [
+            30.75,
+            44.75
+          ],
+          "domain_intersection": [
+            30.75,
+            44.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 17.982676834617994,
+          "overlap_rmse": 24.51059404141009,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.0,
+          "mae_over_Uinf": 0.0339295789332415,
+          "max_abs_error_m_s": 57.19867901622075
+        },
+        {
+          "reference_samples": 57,
+          "computed_samples": 57,
+          "supported_reference_samples": 57,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            12.75,
+            41.75
+          ],
+          "computed_domain": [
+            12.75,
+            41.75
+          ],
+          "domain_intersection": [
+            12.75,
+            41.75
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.328596239104487,
+          "overlap_rmse": 13.900822590733204,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 10.0,
+          "mae_over_Uinf": 0.017601124979442426,
+          "max_abs_error_m_s": 46.37420311922676
+        },
+        {
+          "reference_samples": 59,
+          "computed_samples": 59,
+          "supported_reference_samples": 59,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            29.25
+          ],
+          "computed_domain": [
+            0.25,
+            29.25
+          ],
+          "domain_intersection": [
+            0.25,
+            29.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 13.861312021063087,
+          "overlap_rmse": 30.968158554332064,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 20.0,
+          "x_evaluated_mm": 20.0,
+          "mae_over_Uinf": 0.026153418907666204,
+          "max_abs_error_m_s": 188.89718225653215
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 99.37168866349413,
+          "overlap_rmse": 117.97891417469803,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 30.0,
+          "mae_over_Uinf": 0.18749375219527192,
+          "max_abs_error_m_s": 252.95865982692075
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 32.41582228652683,
+          "overlap_rmse": 39.66642200206538,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 40.0,
+          "x_evaluated_mm": 40.0,
+          "mae_over_Uinf": 0.06116192884250346,
+          "max_abs_error_m_s": 103.36284003038121
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 12.91893290173274,
+          "overlap_rmse": 17.73847598776757,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.0,
+          "mae_over_Uinf": 0.024375345097608945,
+          "max_abs_error_m_s": 58.891643650244305
+        },
+        {
+          "reference_samples": 29,
+          "computed_samples": 29,
+          "supported_reference_samples": 29,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.25,
+            14.25
+          ],
+          "computed_domain": [
+            0.25,
+            14.25
+          ],
+          "domain_intersection": [
+            0.25,
+            14.25
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.105988476462695,
+          "overlap_rmse": 13.036767436653614,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 60.0,
+          "x_evaluated_mm": 60.0,
+          "mae_over_Uinf": 0.01718111033294848,
+          "max_abs_error_m_s": 46.447742944614276
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-5mm-l0-sa",
+      "label": "5 mm \u00b7 L1 \u00b7 SA",
+      "run": "m205-5mm-l0-sa-2100",
+      "earlier_run": "m205-5mm-l0-sa-1800",
+      "cells": 52224,
+      "totalIterations": 2100,
+      "mass": 0.010165657399854517,
+      "energyAdvective": 0.008626544973936614,
+      "cD_drift100": 7.892117366299608e-06,
+      "wallCrossings": [
+        {
+          "x_m": 0.0178789925073418,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.03740015045830576,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.009235654198837262,
+      "bottomCp": [
+        0.39094448567581647,
+        0.39415240241538424
+      ],
+      "ceilingYplus95": 0.8412442803382874,
+      "upstream_max_mae_pct": 1.9535036227631883,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 109,
+          "computed_samples": 109,
+          "supported_reference_samples": 109,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "computed_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "domain_intersection": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 10.353569200644898,
+          "overlap_rmse": 12.086642103895237,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -29.994388175109513,
+          "mae_over_Uinf": 0.019535036227631884,
+          "max_abs_error_m_s": 22.190214603072036
+        },
+        {
+          "reference_samples": 48,
+          "computed_samples": 48,
+          "supported_reference_samples": 48,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "computed_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "domain_intersection": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 4.049120552596659,
+          "overlap_rmse": 4.293125079273164,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -9.94394539595499,
+          "mae_over_Uinf": 0.00763985009923898,
+          "max_abs_error_m_s": 6.491923808927822
+        },
+        {
+          "reference_samples": 101,
+          "computed_samples": 101,
+          "supported_reference_samples": 101,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "computed_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "domain_intersection": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 7.298182485320803,
+          "overlap_rmse": 7.447423648837451,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.010192191283293905,
+          "mae_over_Uinf": 0.01377015563268076,
+          "max_abs_error_m_s": 9.634395973092523
+        },
+        {
+          "reference_samples": 86,
+          "computed_samples": 86,
+          "supported_reference_samples": 86,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "computed_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "domain_intersection": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 26.068047276205288,
+          "overlap_rmse": 33.59163104099551,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 9.977937120794262,
+          "mae_over_Uinf": 0.04918499486076469,
+          "max_abs_error_m_s": 72.22875470081476
+        },
+        {
+          "reference_samples": 119,
+          "computed_samples": 119,
+          "supported_reference_samples": 119,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "computed_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "domain_intersection": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 66.51968720006414,
+          "overlap_rmse": 78.67470971265736,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 29.967823643644774,
+          "mae_over_Uinf": 0.1255088437737059,
+          "max_abs_error_m_s": 121.19916526601924
+        },
+        {
+          "reference_samples": 114,
+          "computed_samples": 114,
+          "supported_reference_samples": 114,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "computed_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "domain_intersection": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 38.85263283067374,
+          "overlap_rmse": 51.538769502865684,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.01327087095264,
+          "mae_over_Uinf": 0.07330685439749762,
+          "max_abs_error_m_s": 101.81578099542014
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-5mm-l0-sst",
+      "label": "5 mm \u00b7 L1 \u00b7 SST",
+      "run": "m205-5mm-l0-sst-2100",
+      "earlier_run": "m205-5mm-l0-sst-1800",
+      "cells": 52224,
+      "totalIterations": 2100,
+      "mass": 0.013989188649910967,
+      "energyAdvective": 0.08763863139837284,
+      "cD_drift100": 9.043645541320883e-05,
+      "wallCrossings": [
+        {
+          "x_m": 0.010911005021273498,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.04000656013356536,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.07923094340727029,
+      "bottomCp": [
+        0.30094382116559415,
+        0.3708388969937087
+      ],
+      "ceilingYplus95": 0.8087838888168335,
+      "upstream_max_mae_pct": 1.7980400300516428,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 109,
+          "computed_samples": 109,
+          "supported_reference_samples": 109,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "computed_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "domain_intersection": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.529612159273707,
+          "overlap_rmse": 11.248641540405364,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -29.994388175109513,
+          "mae_over_Uinf": 0.017980400300516428,
+          "max_abs_error_m_s": 21.40634295736163
+        },
+        {
+          "reference_samples": 48,
+          "computed_samples": 48,
+          "supported_reference_samples": 48,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "computed_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "domain_intersection": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.037303313603419,
+          "overlap_rmse": 3.3745895683670137,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -9.94394539595499,
+          "mae_over_Uinf": 0.005730760969063054,
+          "max_abs_error_m_s": 5.518293177409191
+        },
+        {
+          "reference_samples": 101,
+          "computed_samples": 101,
+          "supported_reference_samples": 101,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "computed_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "domain_intersection": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 6.382917650219481,
+          "overlap_rmse": 6.5384928215995615,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.010192191283293905,
+          "mae_over_Uinf": 0.012043240849470718,
+          "max_abs_error_m_s": 8.781864127741983
+        },
+        {
+          "reference_samples": 86,
+          "computed_samples": 86,
+          "supported_reference_samples": 86,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "computed_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "domain_intersection": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 35.53992363584185,
+          "overlap_rmse": 46.660776696013784,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 9.977937120794262,
+          "mae_over_Uinf": 0.06705645969026765,
+          "max_abs_error_m_s": 97.39754395728824
+        },
+        {
+          "reference_samples": 119,
+          "computed_samples": 119,
+          "supported_reference_samples": 119,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "computed_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "domain_intersection": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 40.53716665366179,
+          "overlap_rmse": 48.05252030052589,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 29.967823643644774,
+          "mae_over_Uinf": 0.07648522010124867,
+          "max_abs_error_m_s": 95.2642325243737
+        },
+        {
+          "reference_samples": 114,
+          "computed_samples": 114,
+          "supported_reference_samples": 114,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "computed_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "domain_intersection": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 25.8541661675347,
+          "overlap_rmse": 59.917306653283376,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.01327087095264,
+          "mae_over_Uinf": 0.04878144559912208,
+          "max_abs_error_m_s": 267.1352668944025
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-5mm-l1-sa",
+      "label": "5 mm \u00b7 L2 \u00b7 SA",
+      "run": "m205-5mm-l1-sa-2100",
+      "earlier_run": "m205-5mm-l1-sa-1800",
+      "cells": 103500,
+      "totalIterations": 2100,
+      "mass": 0.01865533712692191,
+      "energyAdvective": 0.010763859404921751,
+      "cD_drift100": 0.0001304297185840833,
+      "wallCrossings": [
+        {
+          "x_m": 0.017575785145811013,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.0372628682424727,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.07469108758509715,
+      "bottomCp": [
+        0.39636484723341614,
+        0.3966440580028336
+      ],
+      "ceilingYplus95": 0.5729672312736511,
+      "upstream_max_mae_pct": 1.9802936265820377,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 109,
+          "computed_samples": 109,
+          "supported_reference_samples": 109,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "computed_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "domain_intersection": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 10.495556220884799,
+          "overlap_rmse": 12.154341462539245,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -29.994388175109513,
+          "mae_over_Uinf": 0.019802936265820376,
+          "max_abs_error_m_s": 22.397037138605015
+        },
+        {
+          "reference_samples": 48,
+          "computed_samples": 48,
+          "supported_reference_samples": 48,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "computed_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "domain_intersection": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.9002239265192693,
+          "overlap_rmse": 4.160003841461886,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -9.94394539595499,
+          "mae_over_Uinf": 0.0073589130689042815,
+          "max_abs_error_m_s": 6.385084987859841
+        },
+        {
+          "reference_samples": 101,
+          "computed_samples": 101,
+          "supported_reference_samples": 101,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "computed_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "domain_intersection": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 7.337592127990847,
+          "overlap_rmse": 7.4834546545195275,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.010192191283293905,
+          "mae_over_Uinf": 0.013844513449039334,
+          "max_abs_error_m_s": 9.701832738675535
+        },
+        {
+          "reference_samples": 86,
+          "computed_samples": 86,
+          "supported_reference_samples": 86,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "computed_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "domain_intersection": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 26.17835678236667,
+          "overlap_rmse": 33.31335452095859,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 9.977937120794262,
+          "mae_over_Uinf": 0.04939312600446542,
+          "max_abs_error_m_s": 70.91417838034317
+        },
+        {
+          "reference_samples": 119,
+          "computed_samples": 119,
+          "supported_reference_samples": 119,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "computed_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "domain_intersection": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 70.74076742321658,
+          "overlap_rmse": 81.88875949417302,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 29.967823643644774,
+          "mae_over_Uinf": 0.13347314608154073,
+          "max_abs_error_m_s": 115.91843232786181
+        },
+        {
+          "reference_samples": 114,
+          "computed_samples": 114,
+          "supported_reference_samples": 114,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "computed_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "domain_intersection": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 39.70102070114127,
+          "overlap_rmse": 51.014588123136576,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.01327087095264,
+          "mae_over_Uinf": 0.07490758622856843,
+          "max_abs_error_m_s": 101.20532434050926
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-5mm-l1-sst",
+      "label": "5 mm \u00b7 L2 \u00b7 SST",
+      "run": "m205-5mm-l1-sst-2100",
+      "earlier_run": "m205-5mm-l1-sst-1800",
+      "cells": 103500,
+      "totalIterations": 2100,
+      "mass": 0.038887303889965745,
+      "energyAdvective": 0.10433818737520409,
+      "cD_drift100": 0.0010028265752101957,
+      "wallCrossings": [
+        {
+          "x_m": 0.010570764766773731,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.039394347869804384,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.4435417447474638,
+      "bottomCp": [
+        0.3099348309872121,
+        0.3690143634658514
+      ],
+      "ceilingYplus95": 0.5563350915908813,
+      "upstream_max_mae_pct": 1.7637426181461322,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 109,
+          "computed_samples": 109,
+          "supported_reference_samples": 109,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "computed_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "domain_intersection": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.347835876174502,
+          "overlap_rmse": 11.37148357554989,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -29.994388175109513,
+          "mae_over_Uinf": 0.017637426181461323,
+          "max_abs_error_m_s": 21.751776236265755
+        },
+        {
+          "reference_samples": 48,
+          "computed_samples": 48,
+          "supported_reference_samples": 48,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "computed_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "domain_intersection": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.0138838037008546,
+          "overlap_rmse": 3.270498848655422,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -9.94394539595499,
+          "mae_over_Uinf": 0.005686573214529914,
+          "max_abs_error_m_s": 5.212299205711815
+        },
+        {
+          "reference_samples": 101,
+          "computed_samples": 101,
+          "supported_reference_samples": 101,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "computed_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "domain_intersection": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 6.685082350540249,
+          "overlap_rmse": 6.8457947115416475,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.010192191283293905,
+          "mae_over_Uinf": 0.01261336292554764,
+          "max_abs_error_m_s": 9.006653780884449
+        },
+        {
+          "reference_samples": 86,
+          "computed_samples": 86,
+          "supported_reference_samples": 86,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "computed_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "domain_intersection": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 33.222017761811074,
+          "overlap_rmse": 43.875586216394915,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 9.977937120794262,
+          "mae_over_Uinf": 0.06268305238077561,
+          "max_abs_error_m_s": 91.67771978914743
+        },
+        {
+          "reference_samples": 119,
+          "computed_samples": 119,
+          "supported_reference_samples": 119,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "computed_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "domain_intersection": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 50.53080230855238,
+          "overlap_rmse": 55.1688445647672,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 29.967823643644774,
+          "mae_over_Uinf": 0.0953411364312309,
+          "max_abs_error_m_s": 96.55077418195793
+        },
+        {
+          "reference_samples": 114,
+          "computed_samples": 114,
+          "supported_reference_samples": 114,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "computed_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "domain_intersection": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 42.07862075116119,
+          "overlap_rmse": 72.52429733627577,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.01327087095264,
+          "mae_over_Uinf": 0.0793936240587947,
+          "max_abs_error_m_s": 273.8648346714078
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-5mm-l2-sa",
+      "label": "5 mm \u00b7 L3 \u00b7 SA",
+      "run": "m205-5mm-l2-sa-2700",
+      "earlier_run": "m205-5mm-l2-sa-2400",
+      "cells": 208896,
+      "totalIterations": 2700,
+      "mass": 0.037437480459698316,
+      "energyAdvective": 0.013419441013548477,
+      "cD_drift100": 0.00035225745639837203,
+      "wallCrossings": [
+        {
+          "x_m": 0.017666603568136464,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.0371699926952234,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.23343429969195292,
+      "bottomCp": [
+        0.40107906404626115,
+        0.4003548457964918
+      ],
+      "ceilingYplus95": 0.3895619809627533,
+      "upstream_max_mae_pct": 1.994887163487427,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 109,
+          "computed_samples": 109,
+          "supported_reference_samples": 109,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "computed_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "domain_intersection": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 10.572901966483364,
+          "overlap_rmse": 12.178527977085446,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -29.994388175109513,
+          "mae_over_Uinf": 0.01994887163487427,
+          "max_abs_error_m_s": 22.32840318372439
+        },
+        {
+          "reference_samples": 48,
+          "computed_samples": 48,
+          "supported_reference_samples": 48,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "computed_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "domain_intersection": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.7040429869490032,
+          "overlap_rmse": 3.981971058470253,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -9.94394539595499,
+          "mae_over_Uinf": 0.006988760352733968,
+          "max_abs_error_m_s": 6.21832995684008
+        },
+        {
+          "reference_samples": 101,
+          "computed_samples": 101,
+          "supported_reference_samples": 101,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "computed_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "domain_intersection": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 7.3171512545668715,
+          "overlap_rmse": 7.461390087363401,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.010192191283293905,
+          "mae_over_Uinf": 0.01380594576333372,
+          "max_abs_error_m_s": 9.629435045885998
+        },
+        {
+          "reference_samples": 86,
+          "computed_samples": 86,
+          "supported_reference_samples": 86,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "computed_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "domain_intersection": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 26.59198914381894,
+          "overlap_rmse": 33.43603869513977,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 9.977937120794262,
+          "mae_over_Uinf": 0.050173564422299886,
+          "max_abs_error_m_s": 70.71194403057257
+        },
+        {
+          "reference_samples": 119,
+          "computed_samples": 119,
+          "supported_reference_samples": 119,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "computed_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "domain_intersection": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 70.88121745706026,
+          "overlap_rmse": 81.66885432861815,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 29.967823643644774,
+          "mae_over_Uinf": 0.13373814614539672,
+          "max_abs_error_m_s": 114.69201593739547
+        },
+        {
+          "reference_samples": 114,
+          "computed_samples": 114,
+          "supported_reference_samples": 114,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "computed_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "domain_intersection": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 44.35303132142519,
+          "overlap_rmse": 55.17350151503524,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.01327087095264,
+          "mae_over_Uinf": 0.08368496475740603,
+          "max_abs_error_m_s": 101.44256566946927
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    },
+    {
+      "id": "m205-5mm-l2-sst",
+      "label": "5 mm \u00b7 L3 \u00b7 SST",
+      "run": "m205-5mm-l2-sst-2700",
+      "earlier_run": "m205-5mm-l2-sst-2400",
+      "cells": 208896,
+      "totalIterations": 2700,
+      "mass": 0.06750093214444312,
+      "energyAdvective": 0.11446735700620983,
+      "cD_drift100": 0.00131680219974525,
+      "wallCrossings": [
+        {
+          "x_m": 0.010685011669898803,
+          "kind": "separation"
+        },
+        {
+          "x_m": 0.038989839779984395,
+          "kind": "reattachment"
+        }
+      ],
+      "edgeDriftMm": 0.547218375257624,
+      "bottomCp": [
+        0.31641378375928314,
+        0.37109446470414986
+      ],
+      "ceilingYplus95": 0.38127169013023376,
+      "upstream_max_mae_pct": 1.8015621825161503,
+      "sampled_velocity_profiles": [
+        {
+          "reference_samples": 109,
+          "computed_samples": 109,
+          "supported_reference_samples": 109,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "computed_domain": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "domain_intersection": [
+            31.097865078354918,
+            44.0148085999496
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 9.548279567335598,
+          "overlap_rmse": 11.493025245565091,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -30.0,
+          "x_evaluated_mm": -29.994388175109513,
+          "mae_over_Uinf": 0.018015621825161504,
+          "max_abs_error_m_s": 21.907378317755956
+        },
+        {
+          "reference_samples": 48,
+          "computed_samples": 48,
+          "supported_reference_samples": 48,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "computed_domain": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "domain_intersection": [
+            30.846461611842216,
+            36.46959222001769
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 3.1006616238829374,
+          "overlap_rmse": 3.421458931376533,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": -10.0,
+          "x_evaluated_mm": -9.94394539595499,
+          "mae_over_Uinf": 0.005850304950722523,
+          "max_abs_error_m_s": 5.565895696073085
+        },
+        {
+          "reference_samples": 101,
+          "computed_samples": 101,
+          "supported_reference_samples": 101,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "computed_domain": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "domain_intersection": [
+            9.550349946837226,
+            21.51445762380632
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 6.8052397717117135,
+          "overlap_rmse": 6.957494817274731,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 0.0,
+          "x_evaluated_mm": 0.010192191283293905,
+          "mae_over_Uinf": 0.012840075040965498,
+          "max_abs_error_m_s": 9.025611238818897
+        },
+        {
+          "reference_samples": 86,
+          "computed_samples": 86,
+          "supported_reference_samples": 86,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "computed_domain": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "domain_intersection": [
+            31.163121897730793,
+            41.28998345316378
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 31.451130676046226,
+          "overlap_rmse": 41.848457993081475,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 10.0,
+          "x_evaluated_mm": 9.977937120794262,
+          "mae_over_Uinf": 0.059341755992540046,
+          "max_abs_error_m_s": 87.93306123268303
+        },
+        {
+          "reference_samples": 119,
+          "computed_samples": 119,
+          "supported_reference_samples": 119,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "computed_domain": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "domain_intersection": [
+            0.09693168355644786,
+            14.217707306825146
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 59.8375747233509,
+          "overlap_rmse": 64.04342206280143,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 30.0,
+          "x_evaluated_mm": 29.967823643644774,
+          "mae_over_Uinf": 0.11290108438368093,
+          "max_abs_error_m_s": 97.20248916778328
+        },
+        {
+          "reference_samples": 114,
+          "computed_samples": 114,
+          "supported_reference_samples": 114,
+          "sample_coverage": 1.0,
+          "reference_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "computed_domain": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "domain_intersection": [
+            26.379589296826385,
+            39.880522713130055
+          ],
+          "interval_length_coverage": 1.0,
+          "overlap_mae": 46.78489760901781,
+          "overlap_rmse": 75.76410037051149,
+          "full_domain_eligible": true,
+          "mode": "strict",
+          "verdict": "FULL_COVERAGE_NO_THRESHOLD",
+          "warnings": [
+            "Gap quality not checked: convex-hull interpolation may bridge sparse computed samples; use --max-gap."
+          ],
+          "x_mm": 50.0,
+          "x_evaluated_mm": 50.01327087095264,
+          "mae_over_Uinf": 0.08827339171512795,
+          "max_abs_error_m_s": 274.8521075157798
+        }
+      ],
+      "state": "Numerical and inlet checks met"
+    }
+  ],
+  "rampSummaries": [
+    "The 3 mm uniform-inlet pilot missed both upstream profiles by 5.48% and 6.45% of 530 m/s. Changing wall-normal packing alone gave 5.81% and 6.89%. A longer modeled inlet development segment reduced the two errors to 0.84% and 2.29%. The working gate was 5% with full sample support.",
+    "12 of 12 candidate cells have native outputs with a profile audit. 12 met the numerical and inlet screens in a two-state comparison. The table records the actual disposition for each cell."
+  ]
+}

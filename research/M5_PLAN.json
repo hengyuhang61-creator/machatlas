@@ -1,0 +1,101 @@
+[
+  {
+    "id": "m5-coarse-sa",
+    "label": "Coarse · SA-neg",
+    "grid": "coarse",
+    "model": "sa",
+    "totalIterations": 1350,
+    "compare": [
+      "m5-coarse-sa-1200",
+      "m5-coarse-sa-confirm"
+    ]
+  },
+  {
+    "id": "m5-medium-sa",
+    "label": "Medium · SA-neg",
+    "grid": "medium",
+    "model": "sa",
+    "totalIterations": 1350,
+    "compare": [
+      "m5-medium-sa-1200",
+      "m5-medium-sa-confirm"
+    ]
+  },
+  {
+    "id": "m5-fine-sa",
+    "label": "Fine · SA-neg",
+    "grid": "fine",
+    "model": "sa",
+    "totalIterations": 1350,
+    "compare": [
+      "m5-fine-sa-1200",
+      "m5-fine-sa-confirm"
+    ]
+  },
+  {
+    "id": "m5-coarse-sst",
+    "label": "Coarse · SST-2003m",
+    "grid": "coarse",
+    "model": "sst",
+    "totalIterations": 4600,
+    "compare": [
+      "m5-coarse-sst-plain-3300",
+      "m5-coarse-sst-plain-4600"
+    ]
+  },
+  {
+    "id": "m5-medium-sst",
+    "label": "Medium · SST-2003m",
+    "grid": "medium",
+    "model": "sst",
+    "totalIterations": 6000,
+    "compare": [
+      "m5-medium-sst-4600",
+      "m5-medium-sst-6000"
+    ]
+  },
+  {
+    "id": "m5-fine-sst",
+    "label": "Fine · SST-2003m",
+    "grid": "fine",
+    "model": "sst",
+    "totalIterations": 6000,
+    "compare": [
+      "m5-fine-sst-4600",
+      "m5-fine-sst-6000"
+    ]
+  },
+  {
+    "id": "m5-control-adi",
+    "label": "Coarse · matched adiabatic SA",
+    "grid": "coarse",
+    "model": "sa",
+    "totalIterations": 2400,
+    "compare": [
+      "m5-coarse-sa-adi-control-900",
+      "m5-coarse-sa-adi-control-confirm"
+    ]
+  },
+  {
+    "id": "m5-control-iso",
+    "label": "Coarse · matched 300 K SA",
+    "grid": "coarse",
+    "model": "sa",
+    "totalIterations": 2400,
+    "compare": [
+      "m5-coarse-sa-iso-900",
+      "m5-coarse-sa-iso-confirm"
+    ]
+  },
+  {
+    "id": "m5-wilcox-drift",
+    "label": "Coarse · SST + Wilcox",
+    "grid": "coarse",
+    "model": "sst-wilcox",
+    "totalIterations": 3200,
+    "compare": [
+      "m5-coarse-sst-confirm",
+      "m5-coarse-sst-3200"
+    ]
+  }
+]

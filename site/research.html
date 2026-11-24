@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="New native SU2 calculations of a Mach 5 shock–boundary layer interaction, with frozen convergence checks and public replay.">
+<title>Native SWBLI research · MachAtlas</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="research.css">
+<script type="module" src="research.mjs"></script>
+</head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="dark"><div class="wrap bar"><a class="brand" href="./"><b>∿</b>Mach<span>Atlas</span></a>
+<nav aria-label="Primary"><a href="./#cases">Cases</a><a href="research.html" aria-current="page">Research</a><a href="https://github.com/hengyuhang61-creator/machatlas">GitHub ↗</a></nav></div></header>
+<main id="main" class="wrap research">
+<p class="kicker">Native simulations · Mach 5</p>
+<h1>Where the shock meets the wall</h1>
+<p class="lede">A new SU2 study of the Schülein flat-plate benchmark. Explore how grid spacing, turbulence closure and wall temperature affect shock-induced separation.</p>
+<div class="study-links"><a href="#matrix">Compare the runs ↓</a><a href="https://github.com/hengyuhang61-creator/machatlas/tree/v0.2.0/research">Report, settings and replay ↗</a></div>
+<section id="matrix" aria-labelledby="matrix-heading">
+<h2 id="matrix-heading">Mach 5 simulation matrix</h2>
+<p>These are snapshots in a steady iterative solve. Whole-domain mass balance and the stability of wall separation are measured separately. The endpoint of each separated interval is interpolated between neighboring wall nodes with opposite signs of skin friction.</p>
+<div class="study-scroll"><table><thead><tr><th scope="col">Case</th><th scope="col">Cells</th><th scope="col">Iterations</th><th scope="col">Separation [mm]</th><th scope="col">Reattachment [mm]</th><th scope="col">Mass error [%]</th><th scope="col">Endpoint drift [mm]</th></tr></thead><tbody id="matrix-body"></tbody></table></div>
+<p class="caption">Endpoint drift is the larger movement of the two crossings between saved fields, with a working tolerance of 1 mm.</p>
+<div class="lab details">
+<label for="case-control">Inspect a native field</label>
+<select id="case-control" disabled></select>
+<output id="run-summary" aria-live="polite">Loading study evidence.</output>
+<noscript><p>Use the report and static figure links below to read the evidence without JavaScript.</p></noscript>
+</div>
+<figure><a id="flow-link" href="figures/native/m5-coarse-sa.png"><img id="flow-image" src="figures/native/m5-coarse-sa.png" alt="New SU2 Mach 5 flow and wall diagnostics"></a>
+<figcaption id="flow-caption">Native SU2 field. The Mach and velocity panels show the computed domain and the near-wall interaction. Two lower panels show pressure and shear.</figcaption></figure>
+</section>
+<section aria-labelledby="separation-heading"><h2 id="separation-heading">What changed</h2>
+<div id="study-findings"></div>
+<figure><a href="figures/native/m5-wall-comparison.png"><img src="figures/native/m5-wall-comparison.png" alt="Comparison of bottom-wall skin friction and pressure for the Mach 5 calculations" loading="lazy"></a><figcaption>Wall comparison on the same x scale. Negative skin friction identifies reversed near-wall direction. The pressure rise spans different streamwise locations from both friction zeros.</figcaption></figure>
+</section>
+<section><h2>Transfer check at Mach 2.05</h2>
+<div id="ramp-result"></div>
+<div class="study-scroll"><table><thead><tr><th scope="col">Case</th><th scope="col">Cells</th><th scope="col">Iterations</th><th scope="col">Max upstream MAE [%]</th><th scope="col">Mass error [%]</th><th scope="col">Numerical disposition</th></tr></thead><tbody id="ramp-body"></tbody></table></div>
+<figure><a href="figures/native/m205-transfer.png"><img src="figures/native/m205-transfer.png" alt="Computed Mach 2.05 flow for the 3 mm and 5 mm ramps" loading="lazy"></a><figcaption>Mach 2.05 native fields shown with the same Mach scale and the same visible test section. The upstream development section extends beyond the panel.</figcaption></figure>
+<p>The Stanford measurement campaign includes three-dimensional and incoming-boundary-layer effects. The pilot approximates its duct in two dimensions. A good numerical mass balance cannot qualify the incoming velocity profile.</p><p><a href="ramp.html">See the original measured ramp atlas</a></p></section>
+<section><h2>What remains open</h2>
+<p>The released data support differences in these computations. Physical validation remains on hold. Experimental velocity distribution for the Mach 5 comparison is restricted in the NASA archive. NASA Wind-US used a 300 K wall; the primary SU2 grid sweep used adiabatic walls. Comparisons must also respect turbulence-model versions and the distinction between iterative error and grid uncertainty.</p>
+<p><a href="https://su2code.github.io/vandv/swbli/">SU2 V&amp;V</a> · <a href="https://www.grc.nasa.gov/www/wind/valid/m5swbli/m5swbli.html">NASA NPARC archive</a> · <a href="https://elib.dlr.de/21724/">Schülein et al., DLR</a> · <a href="https://open-hydra.github.io/MOSE/vv/2D-swbli/">MOSE cross-code comparison</a></p></section>
+</main>
+<footer class="wrap footer"><span>MachAtlas</span><a href="https://github.com/hengyuhang61-creator/machatlas/releases/tag/v0.2.0">v0.2.0 release ↗</a><a href="https://github.com/hengyuhang61-creator/machatlas/issues/new">Report an issue ↗</a></footer>
+</body></html>

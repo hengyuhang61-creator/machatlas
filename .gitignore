@@ -3,3 +3,9 @@ __pycache__/
 swbli-physics-bench/
 replayed.json
 replayed-figures/
+research/upstream/
+research/grids/
+research/runs/
+research/figs/
+research/*.zip
+research/*.private.csv
