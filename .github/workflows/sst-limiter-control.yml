@@ -1,0 +1,68 @@
+name: Mach 5 SST strain-limiter control
+on:
+  push:
+    branches: [research/sst-limiter-control-20261124]
+permissions:
+  contents: read
+jobs:
+  controlled-pair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build stock SU2 8.6.0 and a strain-floor-only variant
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p evidence
+          uname -a | tee evidence/uname.txt
+          lscpu | tee evidence/cpu.txt
+          g++ --version | tee evidence/compiler.txt
+          git clone --depth 1 --branch v8.6.0 https://github.com/su2code/SU2.git su2
+          cd su2
+          test "$(git rev-parse HEAD)" = 7048fd35f56d4bf52e586429d6746a36a10255f8
+          ./meson.py setup build --buildtype=release -Dwith-mpi=disabled -Dwith-omp=true -Denable-tecio=false -Denable-cgns=false
+          cp build/meson-logs/meson-log.txt ../evidence/configure.log
+          /usr/bin/time -v -o ../evidence/build-stock.time ninja -C build -j3 2>&1 | tee ../evidence/build-stock.log
+          cp build/SU2_CFD/src/SU2_CFD stock
+          file=SU2_CFD/src/solvers/CTurbSSTSolver.cpp
+          python - "$file" <<'PY'
+          import sys
+          from pathlib import Path
+          path = Path(sys.argv[1])
+          text = path.read_text()
+          old = "const su2double StrainMag = max(flowNodes->GetStrainMag(iPoint), 1e-12);"
+          assert text.count(old) == 1
+          path.write_text(text.replace(old, "const su2double StrainMag = 1e-12;"))
+          PY
+          git diff -- "$file" > ../evidence/strain-floor.patch
+          /usr/bin/time -v -o ../evidence/build-variant.time ninja -C build -j3 2>&1 | tee ../evidence/build-variant.log
+          cp build/SU2_CFD/src/SU2_CFD strain-floor
+          sha256sum stock strain-floor | tee ../evidence/binary-sha256.txt
+      - name: Solve and continue to the frozen wall-QoI gate
+        shell: bash
+        run: |
+          set -euxo pipefail
+          sudo apt-get -qq update
+          sudo apt-get -qq install libglu1-mesa
+          python -m pip install -r research/requirements.txt
+          python research/fetch_inputs.py upstream
+          python research/make_mesh.py upstream/VandV-geometry.geo coarse grid
+          sed 's/^SST_OPTIONS=.*/SST_OPTIONS= V2003m/' upstream/official-v8.6.0-sst.cfg > evidence/sst-v2003m.cfg
+          python research/run_native.py su2/stock grid/mesh.su2 evidence/sst-v2003m.cfg evidence/seed --iters 3600 --threads 2 --seconds 900
+          for mode in stock strain-floor; do
+            python research/run_native.py "su2/$mode" grid/mesh.su2 evidence/sst-v2003m.cfg "evidence/$mode-4500" --restart evidence/seed/restart.dat --iters 900 --threads 2 --seconds 480
+            python research/continue_pair.py "su2/$mode" evidence/sst-v2003m.cfg "evidence/$mode-4500" evidence "$mode" --at 4500 --threads 2 --blocks 6
+          done
+      - name: Preserve build and solver evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mach5-strain-limiter-control
+          path: evidence/
+          retention-days: 30
