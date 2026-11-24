@@ -32,3 +32,5 @@ An upstream comparison at two pre-ramp x stations is required before grid/model 
 - [TMR Stanford ramp data](https://tmbwg.github.io/turbmodels/Other_exp_Data/sbliM2.05_exp.html) · [pinned public computational example](https://github.com/ofirnirr/SU2-SWBLI-Mach-2-RANS-Validation/tree/2b2be8c4e982af6e97542237aeaaf9da615707bd) · [benchmark coverage audit](https://github.com/hengyuhang61-creator/cfd-profile-audit/tree/657a81d888186e89a5ff30d83cd2c8b1453a179b). Neither raw PIV nor third-party model exports are bundled. Reports, derived own outputs and original tooling are covered by the project license.
 
 [Native results](RESULTS.md) · [Upstream review](UPSTREAM_REVIEW.md) · [Replay commands](REPRODUCE.md)
+
+[Mach 5 discrepancy investigation and replay](DISCREPANCY.md)

@@ -34,7 +34,7 @@ jobs:
         env:
           ATLAS_REPLAY: replayed.json
       - name: Check published native study data
-        run: node --test native-study.test.mjs
+        run: node --test native-study.test.mjs discrepancy.test.mjs
       - name: Run a bounded native SU2 smoke case
         shell: bash
         working-directory: research

@@ -35,6 +35,9 @@ def field(path):
                               count=size // np.dtype(types[node.attrib["type"]]).itemsize, offset=at + 8)
         count = int(node.attrib.get("NumberOfComponents", 1))
         data[node.attrib["Name"] or "points"] = value.reshape(-1, count) if count > 1 else value
+    if "Velocity" not in data and "Momentum" in data:
+        # SU2 7.4 exports non-dimensional momentum in place of velocity.
+        data["Velocity"] = data["Momentum"].astype(float) / data["Density"][:, None]
     return data
 
 

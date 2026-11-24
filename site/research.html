@@ -5,7 +5,7 @@
 <meta name="description" content="New native SU2 calculations of a Mach 5 shock–boundary layer interaction, with frozen convergence checks and public replay.">
 <title>Native SWBLI research · MachAtlas</title>
 <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="research.css">
-<script type="module" src="research.mjs"></script>
+<link rel="stylesheet" href="discrepancy.css"><script type="module" src="research.mjs"></script><script type="module" src="discrepancy.mjs"></script>
 </head>
 <body><a class="skip" href="#main">Skip to content</a>
 <header class="dark"><div class="wrap bar"><a class="brand" href="./"><b>∿</b>Mach<span>Atlas</span></a>
@@ -13,8 +13,31 @@
 <main id="main" class="wrap research">
 <p class="kicker">Native simulations · Mach 5</p>
 <h1>Where the shock meets the wall</h1>
-<p class="lede">A new SU2 study of the Schülein flat-plate benchmark. Explore how grid spacing, turbulence closure and wall temperature affect shock-induced separation.</p>
-<div class="study-links"><a href="#matrix">Compare the runs ↓</a><a href="https://github.com/hengyuhang61-creator/machatlas/tree/v0.2.0/research">Report, settings and replay ↗</a></div>
+<p class="lede">A new SU2 study of the Schülein flat-plate benchmark. Compare two releases on one locked mesh and inspect the strain-limiter change that explains most of the gap.</p>
+<div class="study-links"><a href="#discrepancy">Compare the flow ↓</a><a href="https://github.com/hengyuhang61-creator/machatlas/tree/v0.2.1/research">Report, settings and replay ↗</a></div>
+<section class="discrepancy" id="discrepancy" aria-labelledby="discrepancy-title">
+<h2 id="discrepancy-title">The same shock. Two predictions.</h2>
+<p class="deck">A Mach 5 shock strikes the boundary layer and drives part of it backward. Compare two native SU2 solutions on the same 37,275-cell mesh, from the same initial field. The bar below each image marks where wall friction indicates reversed flow.</p>
+<div class="toolbar">
+<label>Change one factor<select id="factor"><option value="earlier">SU2 release · both walls adiabatic</option><option value="cold">Wall temperature · both SU2 8.6.0</option></select></label>
+<div class="switch" role="group" aria-label="Flow variable"><button type="button" data-field="mach" aria-pressed="true">Mach number</button><button type="button" data-field="reverse" aria-pressed="false">Near-wall velocity</button></div>
+</div>
+<div class="panes">
+<figure><h3></h3><strong class="score"></strong><div class="raster"><img width="820" height="288" alt=""><span class="probe"></span><span class="bubble"></span></div><figcaption><span class="axes"></span><span class="mass"></span></figcaption></figure>
+<figure><h3></h3><strong class="score"></strong><div class="raster"><img width="820" height="288" alt=""><span class="probe"></span><span class="bubble"></span></div><figcaption><span class="axes"></span><span class="mass"></span></figcaption></figure>
+</div>
+<div class="legend"><span class="gradient" aria-hidden="true"></span><span id="field-key">Mach 0 → 5.1</span><span>Color scales match. Vertical dimensions are exaggerated.</span></div>
+<div class="plot">
+<div class="switch" role="group" aria-label="Wall variable"><button type="button" data-wall="cf" aria-pressed="true">Skin friction C<sub>f</sub></button><button type="button" data-wall="cp" aria-pressed="false">Pressure C<sub>p</sub></button></div>
+<canvas id="wall-plot" role="img" aria-label="Wall skin friction or pressure against axial position for the selected pair"></canvas>
+<p id="reference-key" class="plot-note"></p>
+<label for="axial-probe">Axial probe · slide to compare both fields and the wall trace</label><input id="axial-probe" type="range" min="310" max="370" step=".05" value="334">
+<output id="probe-reading" for="axial-probe">Loading solver evidence.</output>
+</div>
+<div class="explain"><h3>Both runs can balance mass and disagree near the wall.</h3>
+<p>Inlet and outlet mass flow check the global budget. The separation point depends on the local sign of wall shear. A small net imbalance can coexist with a large change in that sign.</p></div>
+<p class="deck">A one-line control kept the solver, grid and restart fixed and changed only the strain input used to limit eddy viscosity. The separation length dropped by roughly 16 mm.</p><p class="deck"><a href="https://github.com/hengyuhang61-creator/machatlas/blob/v0.2.1/research/DISCREPANCY.md">Investigation, uncertainty and replay ↗</a> · <a href="https://github.com/hengyuhang61-creator/machatlas/releases/tag/v0.2.1">Native logs and input files ↗</a></p>
+</section>
 <section id="matrix" aria-labelledby="matrix-heading">
 <h2 id="matrix-heading">Mach 5 simulation matrix</h2>
 <p>These are snapshots in a steady iterative solve. Whole-domain mass balance and the stability of wall separation are measured separately. The endpoint of each separated interval is interpolated between neighboring wall nodes with opposite signs of skin friction.</p>
@@ -42,5 +65,5 @@
 <p>The released data support differences in these computations. Physical validation remains on hold. Experimental velocity distribution for the Mach 5 comparison is restricted in the NASA archive. NASA Wind-US used a 300 K wall; the primary SU2 grid sweep used adiabatic walls. Comparisons must also respect turbulence-model versions and the distinction between iterative error and grid uncertainty.</p>
 <p><a href="https://su2code.github.io/vandv/swbli/">SU2 V&amp;V</a> · <a href="https://www.grc.nasa.gov/www/wind/valid/m5swbli/m5swbli.html">NASA NPARC archive</a> · <a href="https://elib.dlr.de/21724/">Schülein et al., DLR</a> · <a href="https://open-hydra.github.io/MOSE/vv/2D-swbli/">MOSE cross-code comparison</a></p></section>
 </main>
-<footer class="wrap footer"><span>MachAtlas</span><a href="https://github.com/hengyuhang61-creator/machatlas/releases/tag/v0.2.0">v0.2.0 release ↗</a><a href="https://github.com/hengyuhang61-creator/machatlas/issues/new">Report an issue ↗</a></footer>
+<footer class="wrap footer"><span>MachAtlas</span><a href="https://github.com/hengyuhang61-creator/machatlas/releases/tag/v0.2.1">v0.2.1 release ↗</a><a href="https://github.com/hengyuhang61-creator/machatlas/issues/new">Report an issue ↗</a></footer>
 </body></html>

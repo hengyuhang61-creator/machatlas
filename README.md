@@ -1,14 +1,16 @@
 # MachAtlas
 
-**See the physics behind supersonic flight.**
+**See how the same Mach 5 shock can produce different predictions of reversed flow.**
 
-**New in v0.2.0.** [Native SU2 research](https://hengyuhang61-creator.github.io/machatlas/research.html), with new computed fields, three Mach 5 grid levels, the wall-temperature comparison and the Mach 2.05 transfer checks. [Methods and native replay](research/README.md).
+**Mach 5 discrepancy study.** [Compare two native SU2 solutions](https://hengyuhang61-creator.github.io/machatlas/research.html#discrepancy), change a single factor, and inspect Mach number, near-wall velocity, wall friction and pressure. [Methods and native replay](research/DISCREPANCY.md).
+
+On one mesh and initial state, SU2 8.6.0 predicts 23.57 mm of separation and SU2 7.4.0 predicts 7.92 mm. Changing just the strain input to the eddy-viscosity limiter in a matching v8.6.0 build reproduces the large decrease.
 
 An interactive atlas of three wind-tunnel shock–boundary-layer interaction cases. Explore measured velocity maps and change the comparison metric or radial sampling band.
 
 [Open the atlas](https://hengyuhang61-creator.github.io/machatlas/) · [Release](https://github.com/hengyuhang61-creator/machatlas/releases/latest) · [Report an issue](https://github.com/hengyuhang61-creator/machatlas/issues/new) · [中文](README.zh-CN.md)
 
-![MachAtlas with a new SU2 Mach 5 field](media/native-study-cover.png)
+![Two real SU2 near-wall fields on the same Mach 5 mesh](media/native-discrepancy-cover.png)
 
 | Case | What you can inspect |
 | --- | --- |
@@ -37,6 +39,6 @@ python -m http.server 8000 --directory site
 
 Open http://localhost:8000. For a single-case replay, pass `m205`, `m25`, or `hmve` to both `fetch` and `run` in the bench checkout. Atlas tables require all three cases. To check a clean generated table against the released one, write it to a separate path with `make_data.py ... --out replayed.json` and set `ATLAS_REPLAY=replayed.json` before running the Node tests.
 
-The flow maps show experimental PIV. Mach 2.05 and Mach 2.5 comparisons use archived CFD columns. The Mach 3 comparison uses two experiments. The release does not execute a CFD solver or establish grid convergence, universal model rankings or independent validation.
+The three atlas cases use experimental PIV, with archived CFD comparison columns for Mach 2.05 and Mach 2.5. The commands above replay those archived comparisons. The research workflow also includes native SU2 execution and publishes the results of full study runs. CI builds the offline atlas, checks the native evidence and runs a separate 20-iteration SU2 smoke case. Full Mach 5 and Mach 2.05 study replay is opt-in. The evidence supports bounded numerical comparisons. Experimental validation remains open.
 
 [Watch actual native-state inspection](media/native-study-demo.gif) · [Native launch material](PROMOTION_NATIVE.md) · [Original radial-window demo](media/demo.gif) · [Sources and rights](SOURCES.md) · [Launch copy](PROMOTION.md) · [MIT license](LICENSE)
