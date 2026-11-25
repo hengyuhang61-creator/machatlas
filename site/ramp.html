@@ -1,9 +1,19 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Three supersonic wind-tunnel cases with measured flow views and reproducible comparisons."><title>The ceiling ramp · MachAtlas</title>
-<link rel="stylesheet" href="style.css"><script type="module" src="atlas.mjs"></script></head>
+<link rel="stylesheet" href="style.css"><script type="module" src="atlas.mjs"></script><script type="module" src="metric-lab.mjs"></script></head>
 <body><a class="skip" href="#main">Skip to content</a><header class="dark"><div class="wrap bar"><a class="brand" href="./"><b>∿</b>Mach<span>Atlas</span></a><nav aria-label="Primary"><a href="./#cases">Cases</a><a href="https://github.com/hengyuhang61-creator/machatlas">GitHub ↗</a></nav></div></header>
 <main id="main" class="wrap case"><p class="kicker">Mach 2.05 · Stanford PIV + published SU2</p><h1>The ceiling ramp</h1><p class="lede">A 3 mm ceiling ramp sends a shock into a low-aspect-ratio duct. Compare two turbulence models at the same measured coordinates.</p>
+<section class="score-lab" id="metric-lab" aria-labelledby="score-title">
+<h2 id="score-title">Which model fits the wind tunnel better?</h2>
+<p>Keep every velocity sample fixed. Increase the credit for errors above and below the measurements cancelling out.</p>
+<label for="discount">Cancellation credit <strong class="percent">0%</strong></label>
+<input id="discount" type="range" min="0" max="100" step="1" value="0">
+<button type="button" class="reverse">Switch endpoints</button>
+<p class="caption">0% counts every pointwise miss. 100% counts the net bias. Select a station to inspect.</p>
+<div class="stations" role="group" aria-label="Measurement stations"></div><output aria-live="polite">Loading station scores…</output>
+<p class="threshold"></p><a class="permalink" href="#metric-lab">Link to this comparison</a>
+<details><summary>Score, units and limits</summary><p>Score = (1 − d) × mean absolute error + d × absolute mean bias, with d between zero and one. Both terms use velocity errors divided by 532 m/s. Intermediate settings are a sensitivity experiment. They carry no universal preference for cancellation. Each station uses the same paired PIV nodes for both model exports; counts vary by station.</p><p>Reproduce all crossover weights with <code>node metric-sweep.mjs</code> from the repository root.</p></details></section>
 <figure><a href="figures/ramp.png"><img src="figures/ramp.png" alt="Measured normalized velocity binned on the x-y plane of the Mach 2.05 duct"></a><figcaption>Stanford centre-plane PIV at z = 21 mm. One-millimetre bins average valid measured vectors. Blank bins have no measurements. Coordinates originate at the ramp foot and duct floor. The color scale runs from 0 to 1.15. Open the image to inspect the axes.</figcaption></figure>
 <section class="lab" data-case="ramp"><h2>Change the error metric</h2><p>Two published SU2 models compared with the same PIV nodes. Error is normalized by 532 m/s. Lower is better.</p><div class="controls"><label>Station <select id="station" aria-label="Station"></select></label><label>Error metric <select id="metric"><option value="mae">Mean absolute error</option><option value="absBias">Absolute mean bias</option></select></label></div><div class="bars" aria-hidden="true"></div><output id="readout" aria-live="polite"></output><noscript>Enable JavaScript to compare the archived values, or inspect the replay table below.</noscript></section>
 <section><h2>What you are seeing</h2><p>The ramp turns and compresses the flow. Across the duct, an adverse pressure rise can thicken the boundary layer. The PIV map shows finite-height axial velocity in the chosen plane. The comparative diagnostic checks the same sampled coordinates in the archived model exports.</p><p>At x = 10 mm, normalized MAE is 0.05919 for SA and 0.04819 for SST. Absolute mean bias is 0.03490 for SA and 0.03816 for SST. Changing the metric reverses the ranking at four of ten stations.</p></section>

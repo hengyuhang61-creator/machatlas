@@ -50,3 +50,19 @@ test("fresh replay reproduces committed results when ATLAS_REPLAY is set", {
   }
   compare(data, replayed);
 });
+
+test("discount sweeps preserve the endpoints and solve each interior tie", async () => {
+  const {scoreAt,crossover}=await import("./site/metric.mjs");
+  const flips=[];
+  for (const [x,row] of Object.entries(data.ramp)) {
+    assert.deepEqual(scoreAt(row,0).values,row.mae);
+    const end=scoreAt(row,1);
+    row.absBias.forEach((v,i)=>assert.ok(Math.abs(end.values[i]-v)<1e-12));
+    const d=crossover(row);
+    if (d!==null) {
+      assert.equal(scoreAt(row,d).outcome,"Tie");
+      flips.push(Number(x));
+    }
+  }
+  assert.deepEqual(flips.sort((a,b)=>a-b),[10,20,50,60]);
+});

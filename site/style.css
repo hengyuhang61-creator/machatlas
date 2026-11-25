@@ -35,3 +35,9 @@ code{font-family:var(--mono);font-size:.94em}.footer{padding:17px 0 27px;margin-
 @media(max-width:790px){.hero{grid-template-columns:1fr;gap:22px;padding:46px 0 30px}.cards{grid-template-columns:1fr}.bar{height:58px}}
 @media(max-width:480px){.wrap{width:calc(100% - 30px)}nav{gap:12px}.case{padding-top:26px}.lab{padding:12px}.row{grid-template-columns:68px 1fr 55px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.score-lab,.feature{padding-block:24px}.score-lab{border-block:2px solid var(--teal);margin:1.5em 0}
+.score-lab h2{margin-top:0}.score-lab label{display:block;font-weight:700}.score-lab input{width:min(100%,380px);accent-color:var(--teal);vertical-align:middle}
+.score-lab button{font:inherit;cursor:pointer;padding:.4em .6em;border:1px solid #708580;border-radius:4px;background:white;color:#16383a}
+.stations{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}.stations [data-model="SA"]{background:#ffdfbd}.stations [data-model="SST"]{background:#cbe8e2}
+.stations [aria-pressed="true"]{outline:2px solid #153c42;outline-offset:1px}.score-lab details{margin-top:1em}.score-lab summary{cursor:pointer}

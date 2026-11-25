@@ -2,6 +2,8 @@
 
 **See how the same Mach 5 shock can produce different predictions of reversed flow.**
 
+[Which model fits the wind tunnel better?](https://hengyuhang61-creator.github.io/machatlas/ramp.html?x=10&discount=0#metric-lab) Change the cancellation credit, select one of ten stations and share the exact setting. Recompute the crossing weights with `node metric-sweep.mjs`.
+
 **Mach 5 discrepancy study.** [Compare two native SU2 solutions](https://hengyuhang61-creator.github.io/machatlas/research.html#discrepancy), change a single factor, and inspect Mach number, near-wall velocity, wall friction and pressure. [Methods and native replay](research/DISCREPANCY.md).
 
 On one mesh and initial state, SU2 8.6.0 predicts 23.57 mm of separation and SU2 7.4.0 predicts 7.92 mm. Changing just the strain input to the eddy-viscosity limiter in a matching v8.6.0 build reproduces the large decrease.
