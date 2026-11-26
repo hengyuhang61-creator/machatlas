@@ -1,0 +1,408 @@
+{
+  "study": "SU2 supersonic outlet viscous traction",
+  "upstream_pr": "https://github.com/su2code/SU2/pull/2829",
+  "phenomenon": "planar shear at a supersonic outflow",
+  "model": "2-D compressible laminar Navier-Stokes, ideal gas, constant viscosity",
+  "variable": "first-step transverse momentum density rate, kg/(m^2 s^2)",
+  "scope": "One-step manufactured balance; no grid uncertainty or experimental validation.",
+  "binaries": {
+    "8.5.0": {
+      "commit": "12eb826f049ef7f67df974dfcb44cf36ee07c0f8",
+      "zip": "SU2-v8.5.0-win64-omp.zip",
+      "zip_sha256": "4466fe21aedb5e0bad57afd45f829acbdec6ec79fe8c3f8954ddea06a4b4bc11",
+      "binary_sha256": "3cb60646b31c08e468441be9f3497601960d4bb31349e6329982bcdeed599248"
+    },
+    "8.6.0": {
+      "commit": "7048fd35f56d4bf52e586429d6746a36a10255f8",
+      "zip": "SU2_v8.6.0_win64-omp.zip",
+      "zip_sha256": "4bc28b656def415b4d22c8274af2473dd719aa5ebfa6bc1c95c08b1bac26508c",
+      "binary_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7"
+    }
+  },
+  "cases": {
+    "v85-supersonic": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.2425482000107877,
+      "binary_sha256": "3cb60646b31c08e468441be9f3497601960d4bb31349e6329982bcdeed599248",
+      "marker": "supersonic",
+      "nx": 20,
+      "ny": 16,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 2000,
+      "shear_stress_pa": 2.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -2000.0,
+      "qoi": {
+        "outlet": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776926,
+          "median_rate": -1999.999999995336,
+          "min_rate": -1999.9999999953423,
+          "max_rate": -1999.9999999953352
+        },
+        "one_cell_inside": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "0f32951ca7b078fe3bdab9498fd3fb6202f4d2ac87e0795322530deadc213af1",
+        "initial_00000.csv": "d637daaccd7ae803655b768ab565b3f193c756c0e9ff6366d022c4747ded63bc",
+        "case.cfg": "e9ef3751d1d92f66a53823c8d241fe278173fc6ccd290989fc2c18706c7c740e",
+        "result_00001.csv": "0b1b75ed235e84ff19272bc52d07e96fbbdda833353eeafa459f653ecc7381ce",
+        "su2.log": "47697cb595247e5fdf75eed361ee3058f622b05a65152e771f7b3910e7fbea71"
+      },
+      "version": "8.5.0",
+      "expected_outlet_rate": -2000.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "c01911b9b66d0b5a693823847850d20a0c2e4434e9a05cd47405dc6d97624f65"
+    },
+    "v85-pressure": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.03869110002415255,
+      "binary_sha256": "3cb60646b31c08e468441be9f3497601960d4bb31349e6329982bcdeed599248",
+      "marker": "pressure",
+      "nx": 20,
+      "ny": 16,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 2000,
+      "shear_stress_pa": 2.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -2000.0,
+      "qoi": {
+        "outlet": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776926,
+          "median_rate": -1999.999999995336,
+          "min_rate": -1999.9999999953423,
+          "max_rate": -1999.9999999953352
+        },
+        "one_cell_inside": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "0f32951ca7b078fe3bdab9498fd3fb6202f4d2ac87e0795322530deadc213af1",
+        "initial_00000.csv": "d637daaccd7ae803655b768ab565b3f193c756c0e9ff6366d022c4747ded63bc",
+        "case.cfg": "7de283b553f9f6561ab3d576ee63797e7dca13b47e7554ec5aff1fbaa6b62ac8",
+        "result_00001.csv": "0b1b75ed235e84ff19272bc52d07e96fbbdda833353eeafa459f653ecc7381ce",
+        "su2.log": "242717cb6700456483fee8673fa9d9610196320dd9f6b5f55a9c9e68bb7e4d53"
+      },
+      "version": "8.5.0",
+      "expected_outlet_rate": -2000.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "c01911b9b66d0b5a693823847850d20a0c2e4434e9a05cd47405dc6d97624f65"
+    },
+    "v86-supersonic": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.18114639999112114,
+      "binary_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7",
+      "marker": "supersonic",
+      "nx": 20,
+      "ny": 16,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 2000,
+      "shear_stress_pa": 2.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -2000.0,
+      "qoi": {
+        "outlet": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 4.649926277355825e-09,
+          "min_rate": 4.62607382956115e-09,
+          "max_rate": 4.701967981635144e-09
+        },
+        "one_cell_inside": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "0f32951ca7b078fe3bdab9498fd3fb6202f4d2ac87e0795322530deadc213af1",
+        "initial_00000.csv": "d637daaccd7ae803655b768ab565b3f193c756c0e9ff6366d022c4747ded63bc",
+        "case.cfg": "e9ef3751d1d92f66a53823c8d241fe278173fc6ccd290989fc2c18706c7c740e",
+        "result_00001.csv": "42c434096af5a1576584a881f62b1d4b10f43404822b5de3e82121a98b942dfd",
+        "su2.log": "024b03efde1cef205ea1352a359d19754ea314b29347556f0f0774ec42de7e07"
+      },
+      "version": "8.6.0",
+      "expected_outlet_rate": 0.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "2c345c1a530c0702d7b9f903e3887bdc5e180f6651c70dbf41e643e9ea35f53b"
+    },
+    "v86-pressure": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.04459800000768155,
+      "binary_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7",
+      "marker": "pressure",
+      "nx": 20,
+      "ny": 16,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 2000,
+      "shear_stress_pa": 2.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -2000.0,
+      "qoi": {
+        "outlet": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776926,
+          "median_rate": -1999.999999995336,
+          "min_rate": -1999.9999999953423,
+          "max_rate": -1999.9999999953352
+        },
+        "one_cell_inside": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 9,
+          "min_normal_mach": 1.8494477922776185,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "0f32951ca7b078fe3bdab9498fd3fb6202f4d2ac87e0795322530deadc213af1",
+        "initial_00000.csv": "d637daaccd7ae803655b768ab565b3f193c756c0e9ff6366d022c4747ded63bc",
+        "case.cfg": "7de283b553f9f6561ab3d576ee63797e7dca13b47e7554ec5aff1fbaa6b62ac8",
+        "result_00001.csv": "0906546d1e76c5a1f40d41a7826f6e949b4f05be9b46b60f6fb10879b0ea6b5a",
+        "su2.log": "0dd75207c24056a3f79b401c7a7dbb4be9d3bc3ac40e293df12be06b6a245f37"
+      },
+      "version": "8.6.0",
+      "expected_outlet_rate": -2000.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "c01911b9b66d0b5a693823847850d20a0c2e4434e9a05cd47405dc6d97624f65"
+    },
+    "v85-uniform": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.040152199973817915,
+      "binary_sha256": "3cb60646b31c08e468441be9f3497601960d4bb31349e6329982bcdeed599248",
+      "marker": "supersonic",
+      "nx": 20,
+      "ny": 16,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 0,
+      "shear_stress_pa": 0.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -0.0,
+      "qoi": {
+        "outlet": {
+          "count": 9,
+          "min_normal_mach": 1.8708286933869704,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "one_cell_inside": {
+          "count": 9,
+          "min_normal_mach": 1.8708286933869704,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 9,
+          "min_normal_mach": 1.8708286933869704,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "0f32951ca7b078fe3bdab9498fd3fb6202f4d2ac87e0795322530deadc213af1",
+        "initial_00000.csv": "0ae75c920e067a3f4117e64088bc3ed83475de80cdf5ada34204db5f6417d135",
+        "case.cfg": "e9ef3751d1d92f66a53823c8d241fe278173fc6ccd290989fc2c18706c7c740e",
+        "result_00001.csv": "e55d2dacbb477f56bd08e2792c825869630783e9811b070fe9c4de62f2bc2d79",
+        "su2.log": "9cef74257d325c459a1733c4a1aa30a1adf831dbef87b44eda8629328147db50"
+      },
+      "version": "8.5.0",
+      "expected_outlet_rate": -0.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "b5dad0e664bc23071867aa286698b2258ae21bc927439fcdace6454de1d59d55"
+    },
+    "v86-uniform": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.04040830000303686,
+      "binary_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7",
+      "marker": "supersonic",
+      "nx": 20,
+      "ny": 16,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 0,
+      "shear_stress_pa": 0.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -0.0,
+      "qoi": {
+        "outlet": {
+          "count": 9,
+          "min_normal_mach": 1.8708286933869704,
+          "median_rate": -8.914639693101627e-12,
+          "min_rate": -3.9648284655413565e-11,
+          "max_rate": 4.882735993305578e-11
+        },
+        "one_cell_inside": {
+          "count": 9,
+          "min_normal_mach": 1.8708286933869704,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 9,
+          "min_normal_mach": 1.8708286933869704,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "0f32951ca7b078fe3bdab9498fd3fb6202f4d2ac87e0795322530deadc213af1",
+        "initial_00000.csv": "0ae75c920e067a3f4117e64088bc3ed83475de80cdf5ada34204db5f6417d135",
+        "case.cfg": "e9ef3751d1d92f66a53823c8d241fe278173fc6ccd290989fc2c18706c7c740e",
+        "result_00001.csv": "84c174de94abe45fc7c1ee7e0e09745e1ac7d41f5d069717800019051e08af9b",
+        "su2.log": "d57324e31df222232cf3a4eecbecd1c3d2002a9a9f9c0d3733198f6e10eb1288"
+      },
+      "version": "8.6.0",
+      "expected_outlet_rate": 0.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "4bcffdacdf605c680fe83fe57fc25736fc7240ee6f73dd7be8ef852dc283782f"
+    },
+    "v86-fine-supersonic": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.06230610003694892,
+      "binary_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7",
+      "marker": "supersonic",
+      "nx": 40,
+      "ny": 32,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 2000,
+      "shear_stress_pa": 2.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -4000.0,
+      "qoi": {
+        "outlet": {
+          "count": 17,
+          "min_normal_mach": 1.8494477924160182,
+          "median_rate": 9.292046299069749e-09,
+          "min_rate": 9.106430887140257e-09,
+          "max_rate": 9.530570777016596e-09
+        },
+        "one_cell_inside": {
+          "count": 17,
+          "min_normal_mach": 1.8494477924160182,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 17,
+          "min_normal_mach": 1.8494477924160182,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "7e374c0231338da92ed8da023f2a88c6d199c9d2b77649d834990d48327812b2",
+        "initial_00000.csv": "2cf766924f1629be832cc064daca51580621912ea0b9d6af61ebabb3ae65ed49",
+        "case.cfg": "e9ef3751d1d92f66a53823c8d241fe278173fc6ccd290989fc2c18706c7c740e",
+        "result_00001.csv": "523871622b9de93f57c95d7796c1903c72c60dd9d1053552499694ba6df539ff",
+        "su2.log": "7271ba7a7a2a61263864124d9c89103ad30200cc241a56088b791d740fe696ff"
+      },
+      "version": "8.6.0",
+      "expected_outlet_rate": 0.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "8c9d60844aee2869f995738110883cf59f4d1d984d7eba82b0271a6b9ba7e5c8"
+    },
+    "v86-fine-pressure": {
+      "threads": 1,
+      "exit_code": 0,
+      "elapsed_s": 0.06585859996266663,
+      "binary_sha256": "01f22d0c9de2e9a5feea666f67adf3957f503d2e14ca6fd998a9a28a11417bf7",
+      "marker": "pressure",
+      "nx": 40,
+      "ny": 32,
+      "time_step_s": 1e-07,
+      "slope_s_inverse": 2000,
+      "shear_stress_pa": 2.0,
+      "analytic_complete_flux_rate": 0.0,
+      "analytic_omitted_outlet_flux_rate": -4000.0,
+      "qoi": {
+        "outlet": {
+          "count": 17,
+          "min_normal_mach": 1.8494477924163144,
+          "median_rate": -3999.9999999906704,
+          "min_rate": -3999.9999999906854,
+          "max_rate": -3999.9999999906704
+        },
+        "one_cell_inside": {
+          "count": 17,
+          "min_normal_mach": 1.8494477924160182,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        },
+        "mid_domain": {
+          "count": 17,
+          "min_normal_mach": 1.8494477924160182,
+          "median_rate": 0.0,
+          "min_rate": 0.0,
+          "max_rate": 0.0
+        }
+      },
+      "sha256": {
+        "shear.su2": "7e374c0231338da92ed8da023f2a88c6d199c9d2b77649d834990d48327812b2",
+        "initial_00000.csv": "2cf766924f1629be832cc064daca51580621912ea0b9d6af61ebabb3ae65ed49",
+        "case.cfg": "7de283b553f9f6561ab3d576ee63797e7dca13b47e7554ec5aff1fbaa6b62ac8",
+        "result_00001.csv": "a2d1180ee1c580389b12c89861721c1f10d2c357cb3f0f6b3259061f2d12cbfd",
+        "su2.log": "6591b7b79ad362ec9434687a62e5e244a4229f947ebd2b1005cc57ae7f9c0ada"
+      },
+      "version": "8.6.0",
+      "expected_outlet_rate": -4000.0,
+      "outlet_mass_flow_kg_s_per_m_span": 11.200000000000001,
+      "history_sha256": "a1358c5f3839bdb7c92d9dc93b6b55b58317e85656d8a67e23c8ea42ad156350"
+    }
+  }
+}

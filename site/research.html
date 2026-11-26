@@ -64,6 +64,9 @@
 <section id="wall-heat-flux"><h2>SU2 wall heat-flux output</h2>
 <p>On a conducting slab at iteration 1, v8.1.0 reported a bottom-wall mean of −144.24 W/m² and v8.2.0 reported −1,000 W/m². Both saved the same temperature field. The steady analytic slope and two-grid native controls are available with the replay.</p>
 <p><a href="https://github.com/hengyuhang61-creator/machatlas/tree/main/research/heat-flux">Open the solver version archive ↗</a></p></section>
+<section id="viscous-outlet"><h2>SU2 supersonic outlet viscous traction</h2>
+<p>A manufactured shear field gives a transverse momentum density rate of −2,000 kg/(m² s²) at the dedicated outlet in SU2 8.5.0, and nearly zero in 8.6.0. Switching to the ordinary pressure outlet in 8.6.0 restores the −2,000 rate. The native results follow the local traction balance over two grid spacings.</p>
+<p><a href="https://github.com/hengyuhang61-creator/machatlas/tree/main/research/viscous-outlet">Methods and native replay ↗</a> · <a href="viscous-outlet.json">Machine-readable results</a></p></section>
 <section><h2>What remains open</h2>
 <p>The released data support differences in these computations. Physical validation remains on hold. Experimental velocity distribution for the Mach 5 comparison is restricted in the NASA archive. NASA Wind-US used a 300 K wall; the primary SU2 grid sweep used adiabatic walls. Comparisons must also respect turbulence-model versions and the distinction between iterative error and grid uncertainty.</p>
 <p><a href="https://su2code.github.io/vandv/swbli/">SU2 V&amp;V</a> · <a href="https://www.grc.nasa.gov/www/wind/valid/m5swbli/m5swbli.html">NASA NPARC archive</a> · <a href="https://elib.dlr.de/21724/">Schülein et al., DLR</a> · <a href="https://open-hydra.github.io/MOSE/vv/2D-swbli/">MOSE cross-code comparison</a></p></section>

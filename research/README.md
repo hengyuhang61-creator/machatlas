@@ -36,3 +36,5 @@ An upstream comparison at two pre-ramp x stations is required before grid/model 
 [Mach 5 discrepancy investigation and replay](DISCREPANCY.md)
 
 [SU2 wall heat-flux output, paired native releases and analytic control](heat-flux/README.md)
+
+[SU2 8.5.0 / 8.6.0 supersonic viscous outlet, one-step laminar transverse momentum balance](viscous-outlet/README.md) · [Machine-readable study record](../site/viscous-outlet.json)
