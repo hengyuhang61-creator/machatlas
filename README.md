@@ -6,6 +6,8 @@
 
 **Mach 5 discrepancy study.** [Compare two native SU2 solutions](https://hengyuhang61-creator.github.io/machatlas/research.html#discrepancy), change a single factor, and inspect Mach number, near-wall velocity, wall friction and pressure. [Methods and native replay](research/DISCREPANCY.md).
 
+**Solver version archive.** [SU2 wall heat flux in a conducting slab](research/heat-flux/README.md) measures the exported flux and analytic temperature slope before and after an upstream change.
+
 On one mesh and initial state, SU2 8.6.0 predicts 23.57 mm of separation and SU2 7.4.0 predicts 7.92 mm. Changing just the strain input to the eddy-viscosity limiter in a matching v8.6.0 build reproduces the large decrease.
 
 An interactive atlas of three wind-tunnel shock–boundary-layer interaction cases. Explore measured velocity maps and change the comparison metric or radial sampling band.

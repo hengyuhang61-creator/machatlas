@@ -34,3 +34,5 @@ An upstream comparison at two pre-ramp x stations is required before grid/model 
 [Native results](RESULTS.md) · [Upstream review](UPSTREAM_REVIEW.md) · [Replay commands](REPRODUCE.md)
 
 [Mach 5 discrepancy investigation and replay](DISCREPANCY.md)
+
+[SU2 wall heat-flux output, paired native releases and analytic control](heat-flux/README.md)

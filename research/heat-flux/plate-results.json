@@ -1,0 +1,308 @@
+{
+  "early": {
+    "pre": {
+      "nodes": 169,
+      "temperature_residual_log10": -0.5122606803,
+      "bottom": [
+        -144.55343627929688,
+        -144.24186012961647,
+        -143.03292846679688
+      ],
+      "top": [
+        143.03292846679688,
+        144.24186012961647,
+        144.55343627929688
+      ],
+      "vertical_max_abs": 14.685585975646973,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -144.48815276638013,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -48.608604957644275,
+      "native_hf": 4.947570131e-13,
+      "native_max_hf": 212.745022,
+      "max_speed": 0.0,
+      "configuration_sha256": "8d98273b7fab4162bf43d2c8a4606b3207f4c00d0304d45c5b3d8c8f27e0535f",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "post": {
+      "nodes": 169,
+      "temperature_residual_log10": -0.5122606803,
+      "bottom": [
+        -1000.0,
+        -1000.0,
+        -1000.0
+      ],
+      "top": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "vertical_max_abs": 0.0,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -144.48815276638013,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -48.608604957644275,
+      "native_hf": 0.0,
+      "native_max_hf": 1502.697862,
+      "max_speed": 0.0,
+      "configuration_sha256": "8d98273b7fab4162bf43d2c8a4606b3207f4c00d0304d45c5b3d8c8f27e0535f",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "max_abs_delta_T_K": 0.0
+  },
+  "mid": {
+    "pre": {
+      "nodes": 169,
+      "temperature_residual_log10": -2.92600916,
+      "bottom": [
+        -997.7280883789062,
+        -997.6527377041904,
+        -997.5389404296875
+      ],
+      "top": [
+        997.5389404296875,
+        997.6527377041904,
+        997.7280883789062
+      ],
+      "vertical_max_abs": 1.2345316410064697,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -997.728080551492,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -1656.8534004370235,
+      "native_hf": 6.687205043e-13,
+      "native_max_hf": 1499.124758,
+      "max_speed": 0.0,
+      "configuration_sha256": "38261b41e992c6033add18079be6f738b651110009cd7b822c1000ea1e5bcc58",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "post": {
+      "nodes": 169,
+      "temperature_residual_log10": -2.92600916,
+      "bottom": [
+        -1000.0,
+        -1000.0,
+        -1000.0
+      ],
+      "top": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "vertical_max_abs": 0.0,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -997.728080551492,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -1656.8534004370235,
+      "native_hf": 0.0,
+      "native_max_hf": 1502.697862,
+      "max_speed": 0.0,
+      "configuration_sha256": "38261b41e992c6033add18079be6f738b651110009cd7b822c1000ea1e5bcc58",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "max_abs_delta_T_K": 0.0
+  },
+  "tail": {
+    "pre": {
+      "nodes": 169,
+      "temperature_residual_log10": -13.21252031,
+      "bottom": [
+        -1000.0,
+        -1000.0,
+        -1000.0
+      ],
+      "top": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "vertical_max_abs": 1.396983917434369e-10,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -999.9999999999363,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -1666.6666666662195,
+      "native_hf": 7.285763104e-13,
+      "native_max_hf": 1502.697862,
+      "max_speed": 0.0,
+      "configuration_sha256": "13fd060ea0911209fd8ddf835393a381a59c58b99917b9048b4ceb06be2d7118",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "post": {
+      "nodes": 169,
+      "temperature_residual_log10": -13.21252031,
+      "bottom": [
+        -1000.0,
+        -1000.0,
+        -1000.0
+      ],
+      "top": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "vertical_max_abs": 0.0,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -999.9999999999363,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -1666.6666666662195,
+      "native_hf": 0.0,
+      "native_max_hf": 1502.697862,
+      "max_speed": 0.0,
+      "configuration_sha256": "13fd060ea0911209fd8ddf835393a381a59c58b99917b9048b4ceb06be2d7118",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "max_abs_delta_T_K": 0.0
+  },
+  "fine-early": {
+    "pre": {
+      "nodes": 625,
+      "temperature_residual_log10": -0.9421023214,
+      "bottom": [
+        -144.55343627929688,
+        -144.37020343282947,
+        -143.03292846679688
+      ],
+      "top": [
+        143.03292846679688,
+        144.37020343282947,
+        144.55343627929688
+      ],
+      "vertical_max_abs": 14.685585975646973,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -144.48784716652878,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -24.304322523585142,
+      "native_hf": -5.377642776e-17,
+      "native_max_hf": 233.2297217,
+      "max_speed": 0.0,
+      "configuration_sha256": "8d98273b7fab4162bf43d2c8a4606b3207f4c00d0304d45c5b3d8c8f27e0535f",
+      "mesh_sha256": "5284d81a32876a5c2a8abd34751e67e7cadf0b053f9987d77e7cf9eb4e73a1ca"
+    },
+    "post": {
+      "nodes": 625,
+      "temperature_residual_log10": -0.9421023214,
+      "bottom": [
+        -1000.0,
+        -1000.0,
+        -1000.0
+      ],
+      "top": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "vertical_max_abs": 0.0,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -144.48784716652878,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -24.304322523585142,
+      "native_hf": 0.0,
+      "native_max_hf": 1630.689409,
+      "max_speed": 0.0,
+      "configuration_sha256": "8d98273b7fab4162bf43d2c8a4606b3207f4c00d0304d45c5b3d8c8f27e0535f",
+      "mesh_sha256": "5284d81a32876a5c2a8abd34751e67e7cadf0b053f9987d77e7cf9eb4e73a1ca"
+    },
+    "max_abs_delta_T_K": 0.0
+  },
+  "fine-tail": {
+    "pre": {
+      "nodes": 625,
+      "temperature_residual_log10": -10.87284537,
+      "bottom": [
+        -1000.0,
+        -1000.0,
+        -1000.0
+      ],
+      "top": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "vertical_max_abs": 3.157183670055019e-08,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -999.9999999461579,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -1666.6666662606758,
+      "native_hf": 3.492601763e-13,
+      "native_max_hf": 1630.689409,
+      "max_speed": 0.0,
+      "configuration_sha256": "13fd060ea0911209fd8ddf835393a381a59c58b99917b9048b4ceb06be2d7118",
+      "mesh_sha256": "5284d81a32876a5c2a8abd34751e67e7cadf0b053f9987d77e7cf9eb4e73a1ca"
+    },
+    "post": {
+      "nodes": 625,
+      "temperature_residual_log10": -10.87284537,
+      "bottom": [
+        -1000.0,
+        -1000.0,
+        -1000.0
+      ],
+      "top": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "vertical_max_abs": 0.0,
+      "wall_flux_target_bottom": -1000.0,
+      "bottom_normal_first_interval_flux": -999.9999999461579,
+      "analytic_temperature_gradient": -1666.6666666666667,
+      "temperature_gradient": -1666.6666662606758,
+      "native_hf": 0.0,
+      "native_max_hf": 1630.689409,
+      "max_speed": 0.0,
+      "configuration_sha256": "13fd060ea0911209fd8ddf835393a381a59c58b99917b9048b4ceb06be2d7118",
+      "mesh_sha256": "5284d81a32876a5c2a8abd34751e67e7cadf0b053f9987d77e7cf9eb4e73a1ca"
+    },
+    "max_abs_delta_T_K": 0.0
+  },
+  "adiabatic": {
+    "pre": {
+      "nodes": 169,
+      "temperature_residual_log10": -29.1810667,
+      "bottom": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "top": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertical_max_abs": 6.984919587171845e-11,
+      "wall_flux_target_bottom": -0.0,
+      "bottom_normal_first_interval_flux": 0.0,
+      "analytic_temperature_gradient": -0.0,
+      "temperature_gradient": 0.0,
+      "native_hf": -2.910383046e-14,
+      "native_max_hf": 9.192670786e-11,
+      "max_speed": 0.0,
+      "configuration_sha256": "af89c1b9fab50c3d9dfab2d42b4e64e45f1a235901375bbcbcac721b01d42972",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "post": {
+      "nodes": 169,
+      "temperature_residual_log10": -29.1810667,
+      "bottom": [
+        -0.0,
+        0.0,
+        -0.0
+      ],
+      "top": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertical_max_abs": 0.0,
+      "wall_flux_target_bottom": -0.0,
+      "bottom_normal_first_interval_flux": 0.0,
+      "analytic_temperature_gradient": -0.0,
+      "temperature_gradient": 0.0,
+      "native_hf": 0.0,
+      "native_max_hf": 0.0,
+      "max_speed": 0.0,
+      "configuration_sha256": "af89c1b9fab50c3d9dfab2d42b4e64e45f1a235901375bbcbcac721b01d42972",
+      "mesh_sha256": "f4cd66dbaa23a78abf7bce2d63c955839c4ddfaf84fdd56fe22464c19f9d845a"
+    },
+    "max_abs_delta_T_K": 0.0
+  }
+}

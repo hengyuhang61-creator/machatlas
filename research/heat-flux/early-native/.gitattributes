@@ -1,0 +1,4 @@
+*.csv binary
+*.vtk binary
+*.cfg binary
+*.su2 binary
